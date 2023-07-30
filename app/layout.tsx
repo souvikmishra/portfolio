@@ -1,8 +1,9 @@
-import NavBar from './components/NavBar';
 import './globals.css';
 
+import NavBar from './components/NavBar';
+
 export const metadata = {
-  title: 'avgweb.dev',
+  title: 'Souvik Mishra | avgweb.dev',
   description: 'Cliche web portfolio',
 };
 
