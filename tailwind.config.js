@@ -5,6 +5,18 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  theme: {},
+  theme: {
+    extend: {
+      colors: {
+        github: '#211F1F',
+        instagram: '#E4405F',
+        twitter: '#1DA1F2',
+        linkedin: '#0A66C2',
+      },
+    },
+    screens: {
+      tablet: '768px',
+    },
+  },
   plugins: [],
 };

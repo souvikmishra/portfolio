@@ -1,20 +1,44 @@
+import { TfiGithub, TfiLinkedin } from 'react-icons/tfi';
+
+import { AiFillInstagram } from 'react-icons/ai';
+import Link from 'next/link';
+import { RiTwitterFill } from 'react-icons/ri';
+import SocialButton from './components/SocialButton';
+
 export default function Home() {
   return (
     <>
-      <section className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
-        <div className="h-[30rem] rounded-3xl p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
+      <section className="grid grid-cols-1 tablet:grid-cols-[8fr_4fr] gap-5 mb-4">
+        <div className="tablet:h-[30rem] rounded-3xl p-10 flex flex-col gap-8 tablet:gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
           <h1 className="text-4xl font-semibold">
-            Hi! Nothing special here. Just your Avg. Web Developer portfolio.
+            Hi! I&apos;m Souvik, a web developer and part-time designer.
           </h1>
-          <p className="flex-1">
-            I care a lot about using design for positive impact and enjoy
-            creating user—centric, delightful, and human experiences.
+          <p className="tablet:flex-1">
+            I care a lot about using code+design to create a positive impact and
+            enjoy creating user—centric, highly-efficient, and human
+            experiences.
           </p>
-          <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">
-            <button className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto">
+          <div className="flex flex-col tablet:flex-row items-center gap-4 justify-self-end">
+            <Link
+              href={'mailto:mishra.souvik911@gmail.com'}
+              className="bg-black text-white whitespace-nowrap font-medium py-3 px-12 rounded-full w-full tablet:w-[175px] tablet:min-w-[175px]"
+            >
               Contact Me
-            </button>
-            <div className="flex items-center gap-4">add socials</div>
+            </Link>
+            <div className="flex justify-between items-between tablet:gap-4 w-full tablet:w-auto mt-2 tablet:mt-0">
+              <SocialButton bgColor="instagram">
+                <AiFillInstagram className="w-5 h-5" />
+              </SocialButton>
+              <SocialButton bgColor="github">
+                <TfiGithub className="w-5 h-5" />
+              </SocialButton>
+              <SocialButton bgColor="linkedin">
+                <TfiLinkedin className="w-5 h-5" />
+              </SocialButton>
+              <SocialButton bgColor="twitter">
+                <RiTwitterFill className="w-5 h-5" />
+              </SocialButton>
+            </div>
           </div>
         </div>
         <div className="h-[30rem] rounded-3xl p-8 bg-[url('/portfolio-headshot.png')] bg-cover bg-center"></div>

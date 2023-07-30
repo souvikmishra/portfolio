@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply max-w-[90%] w-[1080px] mx-auto;
+  @apply max-w-[90%] tablet:max-w-[95%] w-[1080px] mx-auto;
 }
