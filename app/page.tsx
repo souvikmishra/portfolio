@@ -54,17 +54,17 @@ export default function Home() {
         />
         <ProjectPreview
           name="Another fancy project"
-          description="Project description too"
+          description="Project description"
           bgColor="#313442"
           dark
         />
         <ProjectPreview
-          name="Maybe a responsive grid design"
-          description="Project description too too"
+          name="Responsive grid design"
+          description="Project description"
         />
         <ProjectPreview
-          name="And another useless project"
-          description="Also a project description"
+          name="Another useless project"
+          description="Project description"
           bgColor="#4e4e56"
           dark
         />
