@@ -1,18 +1,18 @@
+import { IconType } from 'react-icons';
 import Link from 'next/link';
 import React from 'react';
-import { IconType } from 'react-icons';
 
-interface Props {
+type Props = {
   href?: string;
   children: React.ReactNode;
   bgColor?: string | undefined;
-}
+};
 
-const SocialButton: React.FC<Props> = ({
+export default function SocialButton({
   href = '#',
   children,
   bgColor = 'black',
-}) => {
+}: Props) {
   let bgHoverColorClass = '';
   let bgFocusColorClass = '';
   switch (bgColor) {
@@ -48,6 +48,4 @@ const SocialButton: React.FC<Props> = ({
       </div>
     </Link>
   );
-};
-
-export default SocialButton;
+}
