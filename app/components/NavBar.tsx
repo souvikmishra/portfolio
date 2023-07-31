@@ -10,7 +10,7 @@ const NavBar = () => {
           AVGWEB.DEV
         </span>
       </div>
-      <div className="flex gap-12 text-md text-zinc-400">
+      <div className="flex md:gap-12 gap-4 md:text-md text-sm text-zinc-400">
         <Link href={'#'} className="text-black font-medium">
           Home
         </Link>
