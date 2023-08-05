@@ -14,7 +14,7 @@ interface Props {
 const ProjectPreview: React.FC<Props> = ({
   name = 'Project Name',
   description = 'Project Description',
-  imageUrl = './img_instagram.png',
+  imageUrl = './stay-tuned.png',
   bgColor = '#e4e4e7',
   dark = false,
   href = '#',
@@ -25,7 +25,7 @@ const ProjectPreview: React.FC<Props> = ({
       style={{ background: `${bgColor}` }}
     >
       <div
-        className="w-full h-full px-10 py-6 duration-500 transition-all ease-in-out hover:scale-105 bg-cover bg-no-repeat bg-center"
+        className="w-full h-full px-10 py-6 duration-500 transition-all ease-in-out hover:scale-105 bg-contain bg-no-repeat bg-center"
         style={{ backgroundImage: `url('${imageUrl}')` }}
       >
         <div className="flex justify-between">
@@ -37,6 +37,7 @@ const ProjectPreview: React.FC<Props> = ({
           </div>
           <Link
             href={href}
+            target={href === '#' ? '' : '_blank'}
             className="h-12 w-12 bg-white rounded-full flex justify-center items-center cursor-pointer"
           >
             <GoArrowUpRight className="w-6 h-6" />

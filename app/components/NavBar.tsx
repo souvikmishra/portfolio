@@ -14,8 +14,8 @@ const NavBar = () => {
         <Link href={'#'} className="text-black font-medium">
           Home
         </Link>
-        <Link href={'#'}>Projects</Link>
-        <Link href={'#'}>Contact</Link>
+        <a href={'#projects'}>Projects</a>
+        <a href={'#contact'}>Contact</a>
       </div>
     </nav>
   );
