@@ -19,7 +19,7 @@ export default function Socials() {
     <div className="flex flex-col tablet:flex-row items-center gap-4 justify-self-end">
       <Link
         href={'mailto:mishra.souvik911@gmail.com'}
-        className="bg-black text-center text-white whitespace-nowrap font-medium py-3 px-12 rounded-full w-full tablet:w-[185px] tablet:min-w-[185px]"
+        className="hover:translate-y-[-0.25rem] focus-visible:translate-y-[-0.25rem] bg-black hover:bg-transparent hover:outline-black hover:outline-1 hover:outline focus-visible:bg-transparent text-center text-white hover:text-black focus-visible:text-black whitespace-nowrap transition-all duration-300 ease-in-out font-medium py-3 px-12 rounded-full w-full tablet:w-[185px] tablet:min-w-[185px]"
       >
         Contact Me
       </Link>
