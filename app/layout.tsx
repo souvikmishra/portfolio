@@ -7,7 +7,7 @@ import NavBar from './components/NavBar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Souvik Mishra | avgweb.dev',
+  title: 'Souvik Mishra | AVGWEB.DEV',
   description: 'Cliche web portfolio',
 };
 
