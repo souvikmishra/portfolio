@@ -15,7 +15,7 @@ interface Props {
 const ProjectPreview: React.FC<Props> = ({
   name = 'Project Name',
   description = 'Project Description',
-  imageUrl = './stay-tuned.png',
+  imageUrl = './stay-tuned.webp',
   bgColor = '#e4e4e7',
   isDark = false,
   href = '#',

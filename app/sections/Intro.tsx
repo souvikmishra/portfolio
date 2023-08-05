@@ -8,7 +8,7 @@ export default function Intro() {
   return (
     <section className="grid grid-cols-1 tablet:grid-cols-[8fr_4fr] gap-4 mb-4">
       <motion.div
-        className="tablet:h-[30rem] rounded-3xl p-10 flex flex-col gap-8 tablet:gap-16 bg-[url('/gradient-bg.jpg')] bg-cover"
+        className="tablet:h-[30rem] rounded-3xl p-10 flex flex-col gap-8 tablet:gap-16 bg-[url('/gradient-bg.webp')] bg-cover"
         initial="initial"
         animate="animate"
         variants={IntroLeftAnimation}
@@ -23,7 +23,7 @@ export default function Intro() {
         <Socials />
       </motion.div>
       <motion.div
-        className="h-[30rem] rounded-3xl p-8 bg-[url('/portfolio-headshot.png')] bg-cover bg-center dark:contrast-[1.15]"
+        className="h-[30rem] rounded-3xl p-8 bg-[url('/portfolio-headshot.webp')] bg-cover bg-center dark:contrast-[1.15]"
         initial="initial"
         animate="animate"
         variants={IntroRightAnimation}

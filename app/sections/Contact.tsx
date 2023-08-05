@@ -12,7 +12,7 @@ export default function Contact() {
       whileInView="animate"
       variants={ContactAnimation}
     >
-      <div className="rounded-3xl p-10 mb-6 flex flex-col gap-8 tablet:gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
+      <div className="rounded-3xl p-10 mb-6 flex flex-col gap-8 tablet:gap-16 bg-[url('/gradient-bg.webp')] bg-cover">
         <h1 className="text-4xl font-semibold">
           Want to work together? Let&apos;s talk!
         </h1>
