@@ -41,7 +41,7 @@ const ProjectPreview: React.FC<Props> = ({
             </h2>
             <p
               className={`text-sm text-zinc-500 ${
-                isDark ? 'text-zinc-200' : ''
+                isDark ? 'text-zinc-100' : ''
               }`}
             >
               {description}

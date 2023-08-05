@@ -21,7 +21,7 @@ export default function Projects() {
       <ProjectPreview
         name="Sublime Finance"
         description="DeFi protocol"
-        bgColor="#313442"
+        bgColor="#2c3d71"
         imageUrl="./sublime.png"
         href="https://sublime.finance/"
         isDark
@@ -31,12 +31,12 @@ export default function Projects() {
         description="Figma Prototype"
         href="https://www.figma.com/proto/LNS4BfknCabAt5Ry1wuWqy/Souvik-WebPage?page-id=0%3A1&type=design&node-id=1-2&viewport=-3077%2C-2966%2C0.52&t=axFlkwAb7VHuUusy-1&scaling=contain&starting-point-node-id=1%3A2&mode=design"
         imageUrl="./figma-mockup.png"
+        bgColor="#4e4e56"
+        isDark
       />
       <ProjectPreview
         name="Other Projects"
         description="Will be adding more projects soon!"
-        bgColor="#4e4e56"
-        isDark
       />
     </section>
   );

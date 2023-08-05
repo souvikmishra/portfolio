@@ -23,7 +23,7 @@ export default function Intro() {
         <Socials />
       </motion.div>
       <motion.div
-        className="h-[30rem] rounded-3xl p-8 bg-[url('/portfolio-headshot.png')] bg-cover bg-center"
+        className="h-[30rem] rounded-3xl p-8 bg-[url('/portfolio-headshot.png')] bg-cover bg-center dark:contrast-[1.15]"
         initial="initial"
         animate="animate"
         variants={IntroRightAnimation}
