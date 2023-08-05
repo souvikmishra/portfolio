@@ -16,7 +16,7 @@ export default function Projects() {
         bgColor="#685cdd"
         imageUrl="./marlin.png"
         href="https://www.marlin.org/"
-        dark
+        isDark
       />
       <ProjectPreview
         name="Sublime Finance"
@@ -24,7 +24,7 @@ export default function Projects() {
         bgColor="#313442"
         imageUrl="./sublime.png"
         href="https://sublime.finance/"
-        dark
+        isDark
       />
       <ProjectPreview
         name="UI/UX Portfolio"
@@ -36,7 +36,7 @@ export default function Projects() {
         name="Other Projects"
         description="Will be adding more projects soon!"
         bgColor="#4e4e56"
-        dark
+        isDark
       />
     </section>
   );

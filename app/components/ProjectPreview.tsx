@@ -8,7 +8,7 @@ interface Props {
   description?: string | undefined;
   imageUrl?: string | undefined;
   bgColor?: string | undefined;
-  dark?: boolean | undefined;
+  isDark?: boolean | undefined;
   href?: string | undefined;
 }
 
@@ -17,12 +17,12 @@ const ProjectPreview: React.FC<Props> = ({
   description = 'Project Description',
   imageUrl = './stay-tuned.png',
   bgColor = '#e4e4e7',
-  dark = false,
+  isDark = false,
   href = '#',
 }) => {
   return (
     <motion.div
-      className={`h-[30rem] rounded-3xl overflow-hidden ${dark ? 'dark' : ''}`}
+      className="h-[30rem] rounded-3xl overflow-hidden"
       style={{ background: `${bgColor}` }}
       initial="initial"
       whileInView="animate"
@@ -34,8 +34,16 @@ const ProjectPreview: React.FC<Props> = ({
       >
         <div className="flex justify-between">
           <div>
-            <h2 className="font-medium text-lg dark:text-white">{name}</h2>
-            <p className="text-sm text-zinc-500 dark:text-zinc-300">
+            <h2
+              className={`font-medium text-lg  ${isDark ? 'text-white' : ''}`}
+            >
+              {name}
+            </h2>
+            <p
+              className={`text-sm text-zinc-500 ${
+                isDark ? 'text-zinc-200' : ''
+              }`}
+            >
               {description}
             </p>
           </div>

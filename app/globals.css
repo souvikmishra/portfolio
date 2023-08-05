@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @apply max-w-[90%] tablet:max-w-[95%] w-[1080px] mx-auto;
+  @apply max-w-[90%] tablet:max-w-[95%] w-[1080px] mx-auto bg-white dark:bg-[#131313];
   font-family: Inter, sans-serif;
   overflow-x: hidden;
 }

@@ -14,12 +14,12 @@ export default function NavBar() {
     >
       <div className="flex gap-[1ch] items-center">
         <div className="w-5 h-5 bg-yellow-400 rounded-full" />
-        <span className="text-sm font-semibold tracking-widest">
+        <span className="dark:text-white text-sm font-semibold tracking-widest">
           AVGWEB.DEV
         </span>
       </div>
       <div className="flex md:gap-12 gap-4 md:text-md text-sm text-zinc-400">
-        <Link href={'#'} className="text-black font-medium">
+        <Link href={'#'} className="text-black dark:text-white font-medium">
           Home
         </Link>
         <a href={'#projects'}>Projects</a>
