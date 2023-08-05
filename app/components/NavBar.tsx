@@ -1,9 +1,17 @@
+'use client';
+
 import Link from 'next/link';
 import React from 'react';
+import { motion } from 'framer-motion';
 
-const NavBar = () => {
+export default function NavBar() {
   return (
-    <nav className="flex justify-between py-4 px-2">
+    <motion.nav
+      className="flex justify-between py-4 px-2"
+      initial="initial"
+      animate="animate"
+      variants={NavBarAnimation}
+    >
       <div className="flex gap-[1ch] items-center">
         <div className="w-5 h-5 bg-yellow-400 rounded-full" />
         <span className="text-sm font-semibold tracking-widest">
@@ -17,8 +25,20 @@ const NavBar = () => {
         <a href={'#projects'}>Projects</a>
         <a href={'#contact'}>Contact</a>
       </div>
-    </nav>
+    </motion.nav>
   );
-};
+}
 
-export default NavBar;
+const NavBarAnimation = {
+  initial: {
+    opacity: 0,
+    y: -50,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.7,
+    },
+  },
+};
