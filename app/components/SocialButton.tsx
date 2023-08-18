@@ -6,10 +6,12 @@ type Props = {
   href?: string
   children: React.ReactNode
   bgColor?: string | undefined
+  ariaLabel?: string | undefined
 }
 
 export default function SocialButton({
   href = '#',
+  ariaLabel = 'Takes you to the top of the page',
   children,
   bgColor = 'black',
 }: Props) {
@@ -41,6 +43,7 @@ export default function SocialButton({
   return (
     <Link
       href={href}
+      aria-label={ariaLabel}
       className={`group h-12 w-12 bg-white hover:translate-y-[-0.25rem] focus-visible:translate-y-[-0.25rem] ${bgHoverColorClass} ${bgFocusColorClass} flex items-center justify-center rounded-full transition-all duration-300 ease-in-out`}
     >
       <div className="text-black transition-all duration-300 ease-in-out group-hover:text-white group-focus-visible:text-white">
