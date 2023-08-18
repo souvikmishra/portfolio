@@ -2,7 +2,6 @@
 
 import ProjectPreview from '../components/ProjectPreview'
 import React from 'react'
-import { motion } from 'framer-motion'
 
 export default function Projects() {
   return (
