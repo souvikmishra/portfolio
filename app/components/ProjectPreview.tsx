@@ -28,8 +28,10 @@ const ProjectPreview: React.FC<Props> = ({
       whileInView="animate"
       variants={PreviewAnimation}
     >
-      <div
-        className="w-full h-full px-10 py-6 duration-500 transition-all ease-in-out hover:scale-105 bg-contain bg-no-repeat bg-center"
+      <Link
+        href={href}
+        target={href === '#' ? '' : '_blank'}
+        className="w-full h-full px-10 py-6 duration-500 transition-all group ease-in-out hover:scale-105 focus-visible:scale-105 bg-contain bg-no-repeat bg-center block cursor-pointer"
         style={{ backgroundImage: `url('${imageUrl}')` }}
       >
         <div className="flex justify-between">
@@ -47,15 +49,11 @@ const ProjectPreview: React.FC<Props> = ({
               {description}
             </p>
           </div>
-          <Link
-            href={href}
-            target={href === '#' ? '' : '_blank'}
-            className="h-12 w-12 bg-white rounded-full flex justify-center items-center cursor-pointer"
-          >
+          <div className="h-12 w-12 bg-white rounded-full group-focus-within:outline group-focus:outline-2 group-focus:outline-offset-1 group-focus:outline-blue-800 flex justify-center items-center">
             <GoArrowUpRight className="w-6 h-6" />
-          </Link>
+          </div>
         </div>
-      </div>
+      </Link>
     </motion.div>
   );
 };
