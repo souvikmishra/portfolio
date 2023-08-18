@@ -35,26 +35,26 @@ export default function Intro() {
 const IntroLeftAnimation = {
   initial: {
     opacity: 0,
-    x: -100,
+    x: -10,
   },
   animate: {
     opacity: 1,
     x: 0,
     transition: {
-      duration: 0.7,
+      duration: 0.3,
     },
   },
 }
 const IntroRightAnimation = {
   initial: {
     opacity: 0,
-    x: 100,
+    x: 10,
   },
   animate: {
     opacity: 1,
     x: 0,
     transition: {
-      duration: 0.7,
+      duration: 0.3,
     },
   },
 }

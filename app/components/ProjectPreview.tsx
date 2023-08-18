@@ -70,7 +70,7 @@ const PreviewAnimation = {
     scale: 1,
     transition: {
       ease: [0.6, 0.01, 0.05, 0.95],
-      duration: 0.7,
+      duration: 0.3,
     },
   },
 }
