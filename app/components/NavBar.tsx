@@ -18,7 +18,7 @@ export default function NavBar() {
           AVGWEB.DEV
         </span>
       </div>
-      <div className="md:text-md flex gap-4 text-sm text-zinc-500 md:gap-12">
+      <div className="md:text-md flex gap-4 text-sm text-zinc-500 dark:text-zinc-300 md:gap-12">
         <Link href={'#'} className="font-semibold text-black dark:text-white">
           Home
         </Link>
