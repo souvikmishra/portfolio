@@ -19,7 +19,7 @@ const LABELS = {
   GITHUB: 'Takes you to my Github profile',
   LINKEDIN: 'Takes you to my LinkedIn profile',
   INSTAGRAM: 'Takes you to my Instagram profile',
-  EMAIL: 'Takes you to your email client',
+  EMAIL: 'Contact me via email',
 }
 
 export default function Socials() {
