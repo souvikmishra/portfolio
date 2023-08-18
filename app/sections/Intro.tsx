@@ -1,14 +1,14 @@
-'use client';
+'use client'
 
-import React from 'react';
-import Socials from '../components/Socials';
-import { motion } from 'framer-motion';
+import React from 'react'
+import Socials from '../components/Socials'
+import { motion } from 'framer-motion'
 
 export default function Intro() {
   return (
-    <section className="grid grid-cols-1 tablet:grid-cols-[8fr_4fr] gap-4 mb-4">
+    <section className="mb-4 grid grid-cols-1 gap-4 tablet:grid-cols-[8fr_4fr]">
       <motion.div
-        className="tablet:h-[30rem] rounded-3xl p-10 flex flex-col gap-8 tablet:gap-16 bg-[url('/gradient-bg.webp')] bg-cover"
+        className="flex flex-col gap-8 rounded-3xl bg-[url('/gradient-bg.webp')] bg-cover p-10 tablet:h-[30rem] tablet:gap-16"
         initial="initial"
         animate="animate"
         variants={IntroLeftAnimation}
@@ -23,13 +23,13 @@ export default function Intro() {
         <Socials />
       </motion.div>
       <motion.div
-        className="h-[30rem] rounded-3xl p-8 bg-[url('/portfolio-headshot.webp')] bg-cover bg-center dark:contrast-[1.15]"
+        className="h-[30rem] rounded-3xl bg-[url('/portfolio-headshot.webp')] bg-cover bg-center p-8 dark:contrast-[1.15]"
         initial="initial"
         animate="animate"
         variants={IntroRightAnimation}
       ></motion.div>
     </section>
-  );
+  )
 }
 
 const IntroLeftAnimation = {
@@ -44,7 +44,7 @@ const IntroLeftAnimation = {
       duration: 0.7,
     },
   },
-};
+}
 const IntroRightAnimation = {
   initial: {
     opacity: 0,
@@ -57,4 +57,4 @@ const IntroRightAnimation = {
       duration: 0.7,
     },
   },
-};
+}

@@ -1,15 +1,15 @@
-import { GoArrowUpRight } from 'react-icons/go';
-import Link from 'next/link';
-import React from 'react';
-import { motion } from 'framer-motion';
+import { GoArrowUpRight } from 'react-icons/go'
+import Link from 'next/link'
+import React from 'react'
+import { motion } from 'framer-motion'
 
 interface Props {
-  name?: string | undefined;
-  description?: string | undefined;
-  imageUrl?: string | undefined;
-  bgColor?: string | undefined;
-  isDark?: boolean | undefined;
-  href?: string | undefined;
+  name?: string | undefined
+  description?: string | undefined
+  imageUrl?: string | undefined
+  bgColor?: string | undefined
+  isDark?: boolean | undefined
+  href?: string | undefined
 }
 
 const ProjectPreview: React.FC<Props> = ({
@@ -22,7 +22,7 @@ const ProjectPreview: React.FC<Props> = ({
 }) => {
   return (
     <motion.div
-      className="h-[30rem] rounded-3xl overflow-hidden"
+      className="h-[30rem] overflow-hidden rounded-3xl"
       style={{ background: `${bgColor}` }}
       initial="initial"
       whileInView="animate"
@@ -31,13 +31,13 @@ const ProjectPreview: React.FC<Props> = ({
       <Link
         href={href}
         target={href === '#' ? '' : '_blank'}
-        className="w-full h-full px-10 py-6 duration-500 transition-all group ease-in-out hover:scale-105 focus-visible:scale-105 bg-contain bg-no-repeat bg-center block cursor-pointer"
+        className="group block h-full w-full cursor-pointer bg-contain bg-center bg-no-repeat px-10 py-6 transition-all duration-500 ease-in-out hover:scale-105 focus-visible:scale-105"
         style={{ backgroundImage: `url('${imageUrl}')` }}
       >
         <div className="flex justify-between">
           <div>
             <h2
-              className={`font-medium text-lg  ${isDark ? 'text-white' : ''}`}
+              className={`text-lg font-medium  ${isDark ? 'text-white' : ''}`}
             >
               {name}
             </h2>
@@ -49,14 +49,14 @@ const ProjectPreview: React.FC<Props> = ({
               {description}
             </p>
           </div>
-          <div className="h-12 w-12 bg-white rounded-full group-focus-within:outline group-focus:outline-2 group-focus:outline-offset-1 group-focus:outline-blue-800 flex justify-center items-center">
-            <GoArrowUpRight className="w-6 h-6" />
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white group-focus-within:outline group-focus:outline-2 group-focus:outline-offset-1 group-focus:outline-blue-800">
+            <GoArrowUpRight className="h-6 w-6" />
           </div>
         </div>
       </Link>
     </motion.div>
-  );
-};
+  )
+}
 
 const PreviewAnimation = {
   initial: {
@@ -73,6 +73,6 @@ const PreviewAnimation = {
       duration: 0.7,
     },
   },
-};
+}
 
-export default ProjectPreview;
+export default ProjectPreview

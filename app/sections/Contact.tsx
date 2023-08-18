@@ -1,8 +1,8 @@
-'use client';
+'use client'
 
-import React from 'react';
-import Socials from '../components/Socials';
-import { motion } from 'framer-motion';
+import React from 'react'
+import Socials from '../components/Socials'
+import { motion } from 'framer-motion'
 
 export default function Contact() {
   return (
@@ -12,7 +12,7 @@ export default function Contact() {
       whileInView="animate"
       variants={ContactAnimation}
     >
-      <div className="rounded-3xl p-10 mb-6 flex flex-col gap-8 tablet:gap-16 bg-[url('/gradient-bg.webp')] bg-cover">
+      <div className="mb-6 flex flex-col gap-8 rounded-3xl bg-[url('/gradient-bg.webp')] bg-cover p-10 tablet:gap-16">
         <h1 className="text-4xl font-semibold">
           Want to work together? Let&apos;s talk!
         </h1>
@@ -24,7 +24,7 @@ export default function Contact() {
         <Socials />
       </div>
     </motion.section>
-  );
+  )
 }
 
 const ContactAnimation = {
@@ -42,4 +42,4 @@ const ContactAnimation = {
       duration: 0.8,
     },
   },
-};
+}

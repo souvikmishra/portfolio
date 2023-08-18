@@ -1,14 +1,14 @@
-'use client';
+'use client'
 
-import ProjectPreview from '../components/ProjectPreview';
-import React from 'react';
-import { motion } from 'framer-motion';
+import ProjectPreview from '../components/ProjectPreview'
+import React from 'react'
+import { motion } from 'framer-motion'
 
 export default function Projects() {
   return (
     <section
       id="projects"
-      className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4"
+      className="my-4 grid grid-cols-1 gap-4 lg:grid-cols-2"
     >
       <ProjectPreview
         name="Marlin Protocol"
@@ -39,5 +39,5 @@ export default function Projects() {
         description="Will be adding more projects soon!"
       />
     </section>
-  );
+  )
 }
