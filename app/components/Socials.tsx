@@ -33,16 +33,32 @@ export default function Socials() {
         Contact Me
       </Link>
       <div className="items-between mt-2 flex w-full justify-between tablet:mt-0 tablet:w-auto tablet:gap-4">
-        <SocialButton  href={LINKS.INSTAGRAM} ariaLabel={LABELS.INSTAGRAM} bgColor="instagram">
+        <SocialButton
+          href={LINKS.INSTAGRAM}
+          ariaLabel={LABELS.INSTAGRAM}
+          bgColor="instagram"
+        >
           <AiFillInstagram className="h-5 w-5" />
         </SocialButton>
-        <SocialButton  href={LINKS.GITHUB} ariaLabel={LABELS.GITHUB} bgColor="github">
+        <SocialButton
+          href={LINKS.GITHUB}
+          ariaLabel={LABELS.GITHUB}
+          bgColor="github"
+        >
           <TfiGithub className="h-5 w-5" />
         </SocialButton>
-        <SocialButton  href={LINKS.LINKEDIN} ariaLabel={LABELS.LINKEDIN} bgColor="linkedin">
+        <SocialButton
+          href={LINKS.LINKEDIN}
+          ariaLabel={LABELS.LINKEDIN}
+          bgColor="linkedin"
+        >
           <TfiLinkedin className="h-5 w-5" />
         </SocialButton>
-        <SocialButton  href={LINKS.TWITTER} ariaLabel={LABELS.TWITTER} bgColor="twitter">
+        <SocialButton
+          href={LINKS.TWITTER}
+          ariaLabel={LABELS.TWITTER}
+          bgColor="twitter"
+        >
           <RiTwitterFill className="h-5 w-5" />
         </SocialButton>
       </div>
