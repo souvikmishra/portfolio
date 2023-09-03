@@ -19,7 +19,7 @@ export default function Contact() {
         <p className="tablet:flex-1">
           Feel free to reach out if you have any questions. I&apos;m always
           available for a quick chat.
-          <br /> Unless its 3 A.M. Then I&apos;m probably working 👨‍💻.
+          <br /> Unless its 3 A.M. then I&apos;m probably working 👨‍💻.
         </p>
         <Socials />
       </div>
