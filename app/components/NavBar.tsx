@@ -3,8 +3,12 @@
 import Link from 'next/link'
 import React from 'react'
 import { motion } from 'framer-motion'
+import { usePathname } from 'next/navigation'
 
 export default function NavBar() {
+  const basePath = usePathname()
+  const selectedRouteClass = 'font-semibold text-black dark:text-white'
+
   return (
     <motion.nav
       className="flex justify-between px-2 py-4"
@@ -19,11 +23,17 @@ export default function NavBar() {
         </span>
       </div>
       <div className="md:text-md flex gap-4 text-sm text-zinc-500 dark:text-zinc-300 md:gap-12">
-        <Link href={'#'} className="font-semibold text-black dark:text-white">
+        <Link href={'/'} className={basePath === '/' ? selectedRouteClass : ''}>
           Home
         </Link>
-        <a href={'#projects'}>Projects</a>
-        <a href={'#contact'}>Contact</a>
+        <Link href={'/#projects'}>Projects</Link>
+        <Link
+          href={'/blog'}
+          className={basePath === '/blog' ? selectedRouteClass : ''}
+        >
+          Blog
+        </Link>
+        <Link href={'/#contact'}>Contact</Link>
       </div>
     </motion.nav>
   )
