@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 
 type Props = {
-  href?: string
+  href?: string | undefined
   children: React.ReactNode
   bgColor?: string | undefined
   ariaLabel?: string | undefined
