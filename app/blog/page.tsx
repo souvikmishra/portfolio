@@ -1,4 +1,6 @@
-import BlogPost from '../components/BlogPost'
+'use client'
+
+import BlogPostPreview from '../components/BlogPostPreview'
 
 const blogs = [
   {
@@ -67,31 +69,38 @@ const blogs = [
     readingTime: '2 min read',
     imageUrl: './stay-tuned.webp',
   },
+  // {
+  //   id: 7,
+  //   title: 'Blog 7',
+  //   content:
+  //     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+  //   tags: ['tag1', 'tag2', 'tag3'],
+  //   date: '2021-07-01',
+  //   slug: 'blog-7',
+  //   readingTime: '2 min read',
+  //   imageUrl: './stay-tuned.webp',
+  // },
 ]
 
 export default function Page() {
   return (
     <>
-      <div className="my-4 grid grid-cols-1 gap-4 lg:grid-cols-[8fr_4fr]">
-        {blogs.slice(0, 2).map((blog) => {
-          return (
-            <BlogPost
-              key={blog.id}
-              title={blog.title}
-              content={blog.content}
-              tags={blog.tags}
-              date={blog.date}
-              slug={blog.slug}
-              readingTime={blog.readingTime}
-              imageUrl={blog.imageUrl}
-            />
-          )
-        })}
+      <div className="my-4 grid grid-cols-1 gap-4">
+        <BlogPostPreview
+          title={blogs[0].title}
+          content={blogs[0].content}
+          tags={blogs[0].tags}
+          date={blogs[0].date}
+          slug={blogs[0].slug}
+          readingTime={blogs[0].readingTime}
+          imageUrl={blogs[0].imageUrl}
+          isFeatured
+        />
       </div>
       <div className="my-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
-        {blogs.slice(2).map((blog) => {
+        {blogs.slice(1).map((blog) => {
           return (
-            <BlogPost
+            <BlogPostPreview
               key={blog.id}
               title={blog.title}
               content={blog.content}
@@ -103,6 +112,7 @@ export default function Page() {
             />
           )
         })}
+        {blogs.length % 2 === 0 && <BlogPostPreview />}
       </div>
     </>
   )

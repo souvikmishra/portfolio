@@ -1,5 +1,11 @@
-import Link from 'next/link'
+import {
+  BentoFadeInAnimation,
+  FeaturedBlogPreviewAnimation,
+} from '../utilities/animations'
+
 import { GoArrowUpRight } from 'react-icons/go'
+import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 interface Props {
   title?: string | undefined
@@ -11,9 +17,10 @@ interface Props {
   imageUrl?: string | undefined
   bgColor?: string | undefined
   isDark?: boolean | undefined
+  isFeatured?: boolean | undefined
 }
 
-export default function BlogPost({
+export default function BlogPostPreview({
   title = 'Blog Title',
   content = 'This is test content',
   tags = ['tag1', 'tag2', 'tag3'],
@@ -23,11 +30,17 @@ export default function BlogPost({
   imageUrl = './stay-tuned.webp',
   bgColor = '#e4e4e7',
   isDark = false,
+  isFeatured = false,
 }: Props) {
   return (
-    <div
+    <motion.div
       className="h-[30rem] overflow-hidden rounded-3xl"
       style={{ background: `${bgColor}` }}
+      initial="initial"
+      whileInView="animate"
+      variants={
+        isFeatured ? FeaturedBlogPreviewAnimation : BentoFadeInAnimation
+      }
     >
       <Link
         href={`/blog/${slug}`}
@@ -49,11 +62,11 @@ export default function BlogPost({
               {content.slice(0, 40)}...
             </p>
           </div>
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white group-focus-within:outline group-focus:outline-2 group-focus:outline-offset-1 group-focus:outline-blue-800">
+          <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-white group-focus-within:outline group-focus:outline-2 group-focus:outline-offset-1 group-focus:outline-blue-800">
             <GoArrowUpRight className="h-6 w-6" />
           </div>
         </div>
       </Link>
-    </div>
+    </motion.div>
   )
 }
