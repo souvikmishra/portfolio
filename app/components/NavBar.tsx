@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { NavBarAnimation } from '../utilities/animations'
 import React from 'react'
 import { motion } from 'framer-motion'
 import { usePathname } from 'next/navigation'
@@ -37,18 +38,4 @@ export default function NavBar() {
       </div>
     </motion.nav>
   )
-}
-
-const NavBarAnimation = {
-  initial: {
-    opacity: 0,
-    y: -50,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.7,
-    },
-  },
 }

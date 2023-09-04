@@ -1,3 +1,4 @@
+import { BentoFadeInAnimation } from '../utilities/animations'
 import { GoArrowUpRight } from 'react-icons/go'
 import Link from 'next/link'
 import React from 'react'
@@ -12,21 +13,21 @@ interface Props {
   href?: string | undefined
 }
 
-const ProjectPreview: React.FC<Props> = ({
+export default function ProjectPreview({
   name = 'Project Name',
   description = 'Project Description',
   imageUrl = './stay-tuned.webp',
   bgColor = '#e4e4e7',
   isDark = false,
   href = '#',
-}) => {
+}: Props) {
   return (
     <motion.div
       className="h-[30rem] overflow-hidden rounded-3xl"
       style={{ background: `${bgColor}` }}
       initial="initial"
       whileInView="animate"
-      variants={PreviewAnimation}
+      variants={BentoFadeInAnimation}
     >
       <Link
         href={href}
@@ -49,7 +50,7 @@ const ProjectPreview: React.FC<Props> = ({
               {description}
             </p>
           </div>
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white group-focus-within:outline group-focus:outline-2 group-focus:outline-offset-1 group-focus:outline-blue-800">
+          <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-white group-focus-within:outline group-focus:outline-2 group-focus:outline-offset-1 group-focus:outline-blue-800">
             <GoArrowUpRight className="h-6 w-6" />
           </div>
         </div>
@@ -57,22 +58,3 @@ const ProjectPreview: React.FC<Props> = ({
     </motion.div>
   )
 }
-
-const PreviewAnimation = {
-  initial: {
-    y: 30,
-    opacity: 0,
-    scale: 0.9,
-  },
-  animate: {
-    y: 0,
-    opacity: 1,
-    scale: 1,
-    transition: {
-      ease: [0.6, 0.01, 0.05, 0.95],
-      duration: 0.3,
-    },
-  },
-}
-
-export default ProjectPreview
