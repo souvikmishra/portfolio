@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 export default function Contact() {
   return (
-    <motion.section
+    <motion.footer
       id="contact"
       initial="initial"
       whileInView="animate"
@@ -23,7 +23,7 @@ export default function Contact() {
         </p>
         <Socials />
       </div>
-    </motion.section>
+    </motion.footer>
   )
 }
 
