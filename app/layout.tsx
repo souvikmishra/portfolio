@@ -1,7 +1,6 @@
 import './globals.css'
 
 import { Analytics } from '@vercel/analytics/react'
-import Contact from './sections/Contact'
 import { Inter } from 'next/font/google'
 import type { Metadata } from 'next'
 import NavBar from './components/NavBar'
@@ -26,7 +25,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <NavBar />
         {children}
-        <Contact />
         <Analytics />
       </body>
     </html>
