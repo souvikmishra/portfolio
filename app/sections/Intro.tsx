@@ -20,7 +20,7 @@ export default function Intro() {
         </h1>
         <p className="tablet:flex-1">
           I care a lot about using code+design to create a positive impact and
-          enjoy creating user—centric, and highly-efficient human experiences.
+          enjoy creating user-centric and highly-efficient human experiences.
         </p>
         <Socials />
       </motion.div>

@@ -34,7 +34,6 @@ export default function NavBar() {
         >
           Blog
         </Link>
-        <Link href={'/#contact'}>Contact</Link>
       </div>
     </motion.nav>
   )
