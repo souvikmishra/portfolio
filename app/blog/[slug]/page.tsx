@@ -43,7 +43,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
   const pubDate = getFormattedDate(date)
 
   return (
-    <main className="prose prose-invert mb-4 mt-8 w-full rounded-3xl p-10">
+    <main className="prose prose-invert mb-4 mt-8 w-full rounded-3xl p-9">
       <h1>{title}</h1>
       <p>{pubDate}</p>
       <article>
