@@ -27,60 +27,60 @@ export default function BlogPostPreview({
   tags = ['tag1', 'tag2', 'tag3'],
   date = '0000-00-00',
   slug = 'test-slug',
-  readingTime = 'test min read',
-  imageUrl = './stay-tuned.webp',
-  bgColor = '#e4e4e7',
+  readingTime = '4 min read',
   isDark = false,
   isFeatured = false,
   description = 'This is a test description',
 }: Props) {
   return (
     <motion.div
-      className="h-[30rem] overflow-hidden rounded-3xl"
-      style={{ background: `${bgColor}` }}
       initial="initial"
       whileInView="animate"
       variants={
         isFeatured ? FeaturedBlogPreviewAnimation : BentoFadeInAnimation
       }
     >
-      <Link
-        href={`/blog/${slug}`}
-        className="group block h-full w-full cursor-pointer bg-contain bg-center bg-no-repeat px-10 py-6 transition-all duration-500 ease-in-out hover:scale-105 focus-visible:scale-105"
-        // style={{ backgroundImage: `url('${imageUrl}')` }}
-      >
-        <div className="flex justify-between">
-          <div>
-            <div>
-              {tags.map((tag) => (
-                <span
-                  key={tag}
-                  className={`text-xs font-semibold ${
-                    isDark ? 'text-white' : 'text-zinc-500'
-                  }`}
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
+      <div className="rounded-3xl border border-gray-200 bg-transparent text-gray-200 transition-all duration-500 ease-out hover:scale-105 focus-visible:scale-105">
+        <Link
+          href={`/blog/${slug}`}
+          className="group flex h-full w-full cursor-pointer justify-between gap-4 px-10 py-6"
+        >
+          <div className="flex w-full flex-col justify-between">
             <h2
-              className={`text-4xl font-medium  ${isDark ? 'text-white' : ''}`}
+              className={`line-clamp-1 text-4xl font-medium ${
+                isDark ? 'text-gray-200' : ''
+              }`}
             >
               {title}
             </h2>
             <p
-              className={`text-sm  ${
+              className={`mt-2 line-clamp-1 text-sm ${
                 isDark ? 'text-zinc-100' : 'text-zinc-500'
               }`}
             >
               {description}...
             </p>
           </div>
-          <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-white group-focus-within:outline group-focus:outline-2 group-focus:outline-offset-1 group-focus:outline-blue-800">
-            <GoArrowUpRight className="h-6 w-6" />
+          <div className="flex flex-col items-end justify-between text-right">
+            <div className="flex items-center gap-2">
+              {tags.map((tag) => (
+                <span
+                  key={tag}
+                  className={`text-xs font-semibold ${
+                    isDark ? 'text-gray-200' : 'text-zinc-500'
+                  }`}
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <div className="flex flex-col">
+              <span className="text-sm">{date}</span>
+              <span className="text-xs">{readingTime}</span>
+            </div>
           </div>
-        </div>
-      </Link>
+        </Link>
+      </div>
     </motion.div>
   )
 }
