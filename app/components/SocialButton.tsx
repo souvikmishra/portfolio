@@ -41,6 +41,7 @@ export default function SocialButton({
 
   return (
     <Link
+      target='_blank'
       href={href}
       aria-label={ariaLabel}
       className={`group h-12 w-12 bg-white hover:translate-y-[-0.25rem] focus-visible:translate-y-[-0.25rem] ${bgHoverColorClass} ${bgFocusColorClass} flex items-center justify-center rounded-full transition-all duration-300 ease-in-out`}
