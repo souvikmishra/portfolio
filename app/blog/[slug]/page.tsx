@@ -43,15 +43,17 @@ export default async function Post({ params }: { params: { slug: string } }) {
   const pubDate = getFormattedDate(date)
 
   return (
-    <main className="prose prose-invert mb-4 mt-8 w-full rounded-3xl p-9">
-      <h1>{title}</h1>
-      <p>{pubDate}</p>
-      <article>
-        <section dangerouslySetInnerHTML={{ __html: contentHtml }}></section>
-        <p>
-          <Link href="/blog">Back to home</Link>
-        </p>
-      </article>
+    <main className="mx-auto w-full rounded-3xl p-9">
+      <div className="prose prose-invert mx-auto">
+        <h1>{title}</h1>
+        <p className="not-prose">{pubDate}</p>
+        <article>
+          <section dangerouslySetInnerHTML={{ __html: contentHtml }}></section>
+          <p>
+            <Link href="/blog">Back to home</Link>
+          </p>
+        </article>
+      </div>
     </main>
   )
 }
