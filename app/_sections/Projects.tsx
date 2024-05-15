@@ -1,6 +1,6 @@
 'use client'
 
-import ProjectPreview from '../components/ProjectPreview'
+import ProjectPreview from '../_components/ProjectPreview'
 import React from 'react'
 
 export default function Projects() {

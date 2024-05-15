@@ -1,9 +1,9 @@
 'use client'
 
-import { HeroLeftAnimation, HeroRightAnimation } from '../utilities/animations'
+import { HeroLeftAnimation, HeroRightAnimation } from '../_utilities/animations'
 
 import React from 'react'
-import Socials from '../components/Socials'
+import Socials from '../_components/Socials'
 import { motion } from 'framer-motion'
 
 export default function Intro() {

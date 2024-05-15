@@ -3,9 +3,7 @@
 import {
   BentoFadeInAnimation,
   FeaturedBlogPreviewAnimation,
-} from '../utilities/animations'
-
-import { GoArrowUpRight } from 'react-icons/go'
+} from '../_utilities/animations'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 

@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import Socials from '../components/Socials'
+import Socials from '../_components/Socials'
 import { motion } from 'framer-motion'
 
 export default function Contact() {

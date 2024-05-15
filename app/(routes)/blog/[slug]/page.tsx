@@ -1,8 +1,8 @@
-import { getBlogData, getSortedBlogsData } from '@/lib/blogs'
 import React from 'react'
 import { notFound } from 'next/navigation'
-import getFormattedDate from '@/lib/getFormattedDate'
+import getFormattedDate from '@/app/_utilities/getFormattedDate'
 import Link from 'next/link'
+import { getBlogData, getSortedBlogsData } from '@/app/_utilities/blogs'
 
 export function generateStaticParams() {
   const posts = getSortedBlogsData()

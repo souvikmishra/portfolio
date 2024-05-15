@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { NavBarAnimation } from '../utilities/animations'
+import { NavBarAnimation } from '../_utilities/animations'
 import React from 'react'
 import { motion } from 'framer-motion'
 import { usePathname } from 'next/navigation'

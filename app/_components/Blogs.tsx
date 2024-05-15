@@ -1,6 +1,6 @@
 import React from 'react'
-import { getSortedBlogsData } from '@/lib/blogs'
 import BlogPostPreview from './BlogPostPreview'
+import { getSortedBlogsData } from '../_utilities/blogs'
 
 function Blogs() {
   const blogs = getSortedBlogsData()
