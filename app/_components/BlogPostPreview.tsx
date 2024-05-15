@@ -1,0 +1,76 @@
+'use client'
+
+import {
+  BentoFadeInAnimation,
+  FeaturedBlogPreviewAnimation,
+} from '../_utilities/animations'
+import Link from 'next/link'
+import { motion } from 'framer-motion'
+import getFormattedDate from '../_utilities/getFormattedDate'
+
+interface Props {
+  slug: string
+  title: string
+  description: string
+  readingTime: string
+  tags?: string[]
+  date: string
+  imageUrl?: string | undefined
+  bgColor?: string | undefined
+  isDark?: boolean | undefined
+  isFeatured?: boolean | undefined
+}
+
+export default function BlogPostPreview({
+  title = 'Blog Title',
+  tags = ['tag1', 'tag2', 'tag3'],
+  date = '0000-00-00',
+  slug = 'test-slug',
+  readingTime = '4 min read',
+  isFeatured = false,
+  description = 'This is a test description',
+}: Props) {
+  return (
+    <motion.div
+      initial="initial"
+      whileInView="animate"
+      variants={
+        isFeatured ? FeaturedBlogPreviewAnimation : BentoFadeInAnimation
+      }
+    >
+      <div className="rounded-3xl border border-gray-200 group hover:bg-gray-200 bg-transparent text-gray-200 transition-all duration-500 ease-out hover:scale-[1.02] focus-visible:scale-[1.02]">
+        <Link
+          href={`/blog/${slug}`}
+          className="flex lg:flex-row flex-col h-full w-full cursor-pointer justify-between gap-4 px-6 py-6 text-gray-200 group-hover:text-gray-900"
+        >
+          <div className="flex w-full flex-col">
+            <div className="flex mb-4 items-center gap-2 text-xs ">
+            <span>{readingTime}</span> |
+              {tags.map((tag) => (
+                <span
+                  key={tag}
+                >
+                  {tag}
+                </span>
+              ))} 
+            </div>
+            <h2
+              className="text-2xl font-medium"
+              
+            >
+              {title}
+            </h2>
+            <p
+              className="mt-1 text-sm text-zinc-500"
+            >
+              {description}
+            </p>
+          </div>
+          <div className="flex flex-col justify-end">
+              <span className="text-base whitespace-nowrap">{getFormattedDate(date)}</span>
+          </div>
+        </Link>
+      </div>
+    </motion.div>
+  )
+}

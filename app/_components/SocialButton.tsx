@@ -1,9 +1,8 @@
-import { IconType } from 'react-icons'
 import Link from 'next/link'
 import React from 'react'
 
 type Props = {
-  href?: string
+  href?: string | undefined
   children: React.ReactNode
   bgColor?: string | undefined
   ariaLabel?: string | undefined
@@ -42,6 +41,7 @@ export default function SocialButton({
 
   return (
     <Link
+      target='_blank'
       href={href}
       aria-label={ariaLabel}
       className={`group h-12 w-12 bg-white hover:translate-y-[-0.25rem] focus-visible:translate-y-[-0.25rem] ${bgHoverColorClass} ${bgFocusColorClass} flex items-center justify-center rounded-full transition-all duration-300 ease-in-out`}

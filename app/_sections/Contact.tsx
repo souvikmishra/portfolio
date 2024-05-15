@@ -1,12 +1,12 @@
 'use client'
 
 import React from 'react'
-import Socials from '../components/Socials'
+import Socials from '../_components/Socials'
 import { motion } from 'framer-motion'
 
 export default function Contact() {
   return (
-    <motion.section
+    <motion.footer
       id="contact"
       initial="initial"
       whileInView="animate"
@@ -19,11 +19,11 @@ export default function Contact() {
         <p className="tablet:flex-1">
           Feel free to reach out if you have any questions. I&apos;m always
           available for a quick chat.
-          <br /> Unless its 3 A.M. Then I&apos;m probably working 👨‍💻.
+          <br /> Unless its 3 A.M. then I&apos;m probably working 👨‍💻.
         </p>
         <Socials />
       </div>
-    </motion.section>
+    </motion.footer>
   )
 }
 

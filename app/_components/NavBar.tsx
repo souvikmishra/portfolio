@@ -1,13 +1,18 @@
 'use client'
 
 import Link from 'next/link'
+import { NavBarAnimation } from '../_utilities/animations'
 import React from 'react'
 import { motion } from 'framer-motion'
+import { usePathname } from 'next/navigation'
 
 export default function NavBar() {
+  const basePath = usePathname()
+  const selectedRouteClass = 'font-semibold text-black dark:text-white'
+
   return (
     <motion.nav
-      className="flex justify-between px-2 py-4"
+      className="flex justify-between  py-4"
       initial="initial"
       animate="animate"
       variants={NavBarAnimation}
@@ -19,26 +24,17 @@ export default function NavBar() {
         </span>
       </div>
       <div className="md:text-md flex gap-4 text-sm text-zinc-500 dark:text-zinc-300 md:gap-12">
-        <Link href={'#'} className="font-semibold text-black dark:text-white">
+        <Link href={'/'} className={basePath === '/' ? selectedRouteClass : ''}>
           Home
         </Link>
-        <a href={'#projects'}>Projects</a>
-        <a href={'#contact'}>Contact</a>
+        <Link href={'/#projects'}>Projects</Link>
+        <Link
+          href={'/blog'}
+          className={basePath.includes('/blog') ? selectedRouteClass : ''}
+        >
+          Blog
+        </Link>
       </div>
     </motion.nav>
   )
-}
-
-const NavBarAnimation = {
-  initial: {
-    opacity: 0,
-    y: -50,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.7,
-    },
-  },
 }
