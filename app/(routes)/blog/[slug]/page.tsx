@@ -44,14 +44,18 @@ export default async function Post({ params }: { params: { slug: string } }) {
   const nextPostSlug =
     postIndex < posts.length - 1 ? posts[postIndex + 1].slug : null
 
-  const { title, date, contentHtml } = await getBlogData(slug)
+  const { title, date, contentHtml, readingTime } = await getBlogData(slug)
   const pubDate = getFormattedDate(date)
 
   return (
     <main className="mx-auto w-full rounded-3xl p-9">
       <div className="prose prose-invert mx-auto">
         <h1>{title}</h1>
-        <p className="not-prose">{pubDate}</p>
+        <div className="-mt-4 mb-8 flex items-end justify-between">
+          <p className="not-prose text-base">{pubDate}</p>
+          <p className="not-prose text-sm">{readingTime}</p>
+        </div>
+
         <article>
           <section dangerouslySetInnerHTML={{ __html: contentHtml }}></section>
           <p className="flex items-center justify-between">
