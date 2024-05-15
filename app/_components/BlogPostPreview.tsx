@@ -6,6 +6,7 @@ import {
 } from '../_utilities/animations'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import getFormattedDate from '../_utilities/getFormattedDate'
 
 interface Props {
   slug: string
@@ -26,7 +27,6 @@ export default function BlogPostPreview({
   date = '0000-00-00',
   slug = 'test-slug',
   readingTime = '4 min read',
-  isDark = false,
   isFeatured = false,
   description = 'This is a test description',
 }: Props) {
@@ -38,44 +38,36 @@ export default function BlogPostPreview({
         isFeatured ? FeaturedBlogPreviewAnimation : BentoFadeInAnimation
       }
     >
-      <div className="rounded-3xl border border-gray-200 bg-transparent text-gray-200 transition-all duration-500 ease-out hover:scale-105 focus-visible:scale-105">
+      <div className="rounded-3xl border border-gray-200 group hover:bg-gray-200 bg-transparent text-gray-200 transition-all duration-500 ease-out hover:scale-[1.02] focus-visible:scale-[1.02]">
         <Link
           href={`/blog/${slug}`}
-          className="group flex h-full w-full cursor-pointer justify-between gap-4 px-10 py-6"
+          className="flex lg:flex-row flex-col h-full w-full cursor-pointer justify-between gap-4 px-6 py-6 text-gray-200 group-hover:text-gray-900"
         >
-          <div className="flex w-full flex-col justify-between">
+          <div className="flex w-full flex-col">
+            <div className="flex mb-4 items-center gap-2 text-xs ">
+            <span>{readingTime}</span> |
+              {tags.map((tag) => (
+                <span
+                  key={tag}
+                >
+                  {tag}
+                </span>
+              ))} 
+            </div>
             <h2
-              className={`line-clamp-1 text-4xl font-medium ${
-                isDark ? 'text-gray-200' : ''
-              }`}
+              className="text-2xl font-medium"
+              
             >
               {title}
             </h2>
             <p
-              className={`mt-2 line-clamp-1 text-sm ${
-                isDark ? 'text-zinc-100' : 'text-zinc-500'
-              }`}
+              className="mt-1 text-sm text-zinc-500"
             >
-              {description}...
+              {description}
             </p>
           </div>
-          <div className="flex flex-col items-end justify-between text-right">
-            <div className="flex items-center gap-2">
-              {tags.map((tag) => (
-                <span
-                  key={tag}
-                  className={`text-xs font-semibold ${
-                    isDark ? 'text-gray-200' : 'text-zinc-500'
-                  }`}
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-            <div className="flex flex-col">
-              <span className="text-sm">{date}</span>
-              <span className="text-xs">{readingTime}</span>
-            </div>
+          <div className="flex flex-col justify-end">
+              <span className="text-base whitespace-nowrap">{getFormattedDate(date)}</span>
           </div>
         </Link>
       </div>
