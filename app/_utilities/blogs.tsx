@@ -13,6 +13,9 @@ export function getBlogsData(sortDirection: 'asc' | 'desc' = 'desc') {
     const fullPath = path.join(postsDirectory, fileName)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const matterResult = matter(fileContents)
+    const readingTime =
+      Math.ceil(matterResult.content.split(' ').length / 183).toString() +
+      ' min read'
 
     const blogPost: BlogPost = {
       slug,
@@ -20,7 +23,7 @@ export function getBlogsData(sortDirection: 'asc' | 'desc' = 'desc') {
       date: matterResult.data.date,
       tags: matterResult.data.tags,
       description: matterResult.data.description,
-      readingTime: matterResult.data.readingTime,
+      readingTime: readingTime,
     }
     return blogPost
   })
@@ -36,6 +39,10 @@ export async function getBlogData(slug: string) {
 
   //use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents)
+  const readingTime =
+    Math.ceil(matterResult.content.split(' ').length / 183).toString() +
+    ' min read'
+
   const processedContent = await remark()
     .use(html)
     .process(matterResult.content)
@@ -47,7 +54,7 @@ export async function getBlogData(slug: string) {
     date: matterResult.data.date,
     tags: matterResult.data.tags,
     description: matterResult.data.description,
-    readingTime: matterResult.data.readingTime,
+    readingTime: readingTime,
     contentHtml,
   }
 
