@@ -2,10 +2,10 @@ import React from 'react'
 import { notFound } from 'next/navigation'
 import getFormattedDate from '@/app/_utilities/getFormattedDate'
 import Link from 'next/link'
-import { getBlogData, getSortedBlogsData } from '@/app/_utilities/blogs'
+import { getBlogData, getBlogsData } from '@/app/_utilities/blogs'
 
 export function generateStaticParams() {
-  const posts = getSortedBlogsData()
+  const posts = getBlogsData()
   return posts.map((post) => ({
     params: {
       slug: post.slug,
@@ -14,7 +14,7 @@ export function generateStaticParams() {
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }) {
-  const posts = getSortedBlogsData()
+  const posts = getBlogsData()
   const { slug } = params
 
   const post = posts.find((post) => post.slug === slug)
@@ -31,15 +31,20 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
 }
 
 export default async function Post({ params }: { params: { slug: string } }) {
-  const posts = getSortedBlogsData()
+  const posts = getBlogsData('asc')
   const { slug } = params
 
-  if (!posts.find((post) => post.slug === slug)) {
+  const postIndex = posts.findIndex((post) => post.slug === slug)
+
+  if (postIndex === -1) {
     return notFound()
   }
 
-  const { title, date, contentHtml } = await getBlogData(slug)
+  const prevPostSlug = postIndex > 0 ? posts[postIndex - 1].slug : null
+  const nextPostSlug =
+    postIndex < posts.length - 1 ? posts[postIndex + 1].slug : null
 
+  const { title, date, contentHtml } = await getBlogData(slug)
   const pubDate = getFormattedDate(date)
 
   return (
@@ -49,8 +54,24 @@ export default async function Post({ params }: { params: { slug: string } }) {
         <p className="not-prose">{pubDate}</p>
         <article>
           <section dangerouslySetInnerHTML={{ __html: contentHtml }}></section>
-          <p>
+          <p className="flex items-center justify-between">
+            {prevPostSlug !== null && (
+              <Link
+                href={`/blog/${prevPostSlug}`}
+                className="flex items-center"
+              >
+                Read Previous Blog
+              </Link>
+            )}
             <Link href="/blog">Back to home</Link>
+            {nextPostSlug !== null && (
+              <Link
+                href={`/blog/${nextPostSlug}`}
+                className="flex items-center"
+              >
+                Read Next Blog
+              </Link>
+            )}
           </p>
         </article>
       </div>

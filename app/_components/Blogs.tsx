@@ -1,9 +1,9 @@
 import React from 'react'
 import BlogPostPreview from './BlogPostPreview'
-import { getSortedBlogsData } from '../_utilities/blogs'
+import { getBlogsData } from '../_utilities/blogs'
 
 function Blogs() {
-  const blogs = getSortedBlogsData()
+  const blogs = getBlogsData()
   return (
     <section id="projects">
       <ul className="flex flex-col gap-4">

@@ -6,7 +6,7 @@ import html from 'remark-html'
 
 const postsDirectory = path.join(process.cwd(), 'blogs')
 
-export function getSortedBlogsData() {
+export function getBlogsData(sortDirection: 'asc' | 'desc' = 'desc') {
   const fileNames = fs.readdirSync(postsDirectory)
   const allBlogsData = fileNames.map((fileName) => {
     const slug = fileName.replace(/\.md$/, '')
@@ -24,7 +24,10 @@ export function getSortedBlogsData() {
     }
     return blogPost
   })
-  return allBlogsData.sort((a, b) => (a.date < b.date ? 1 : -1))
+
+  return sortDirection === 'desc'
+    ? allBlogsData.sort((a, b) => (a.date < b.date ? 1 : -1))
+    : allBlogsData.sort((a, b) => (a.date > b.date ? 1 : -1))
 }
 
 export async function getBlogData(slug: string) {
