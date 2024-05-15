@@ -12,7 +12,7 @@ export default function NavBar() {
 
   return (
     <motion.nav
-      className="flex justify-between px-2 py-4"
+      className="flex justify-between  py-4"
       initial="initial"
       animate="animate"
       variants={NavBarAnimation}
@@ -30,7 +30,7 @@ export default function NavBar() {
         <Link href={'/#projects'}>Projects</Link>
         <Link
           href={'/blog'}
-          className={basePath === '/blog' ? selectedRouteClass : ''}
+          className={basePath.includes('/blog') ? selectedRouteClass : ''}
         >
           Blog
         </Link>
