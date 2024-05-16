@@ -48,7 +48,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
   const pubDate = getFormattedDate(date)
 
   return (
-    <main className="mx-auto w-full rounded-3xl p-9">
+    <main className="mx-auto w-full rounded-3xl pt-4 lg:pt-8">
       <div className="prose prose-invert mx-auto">
         <h1>{title}</h1>
         <div className="-mt-4 mb-8 flex items-end justify-between">
