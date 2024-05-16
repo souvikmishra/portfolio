@@ -16,7 +16,7 @@ interface Props {
 export default function ProjectPreview({
   name = 'Project Name',
   description = 'Project Description',
-  imageUrl = './stay-tuned.webp',
+  imageUrl = '/stay-tuned.webp',
   bgColor = '#e4e4e7',
   isDark = false,
   href = '#',

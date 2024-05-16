@@ -13,7 +13,7 @@ export default function Projects() {
         name="Marlin Protocol"
         description="Web3 serverless backends"
         bgColor="#685cdd"
-        imageUrl="./marlin.webp"
+        imageUrl="/marlin.webp"
         href="https://www.marlin.org/"
         isDark
       />
@@ -21,7 +21,7 @@ export default function Projects() {
         name="Sublime Finance"
         description="DeFi protocol"
         bgColor="#2c3d71"
-        imageUrl="./sublime.webp"
+        imageUrl="/sublime.webp"
         href="https://sublime.finance/"
         isDark
       />
@@ -29,7 +29,7 @@ export default function Projects() {
         name="UI/UX Portfolio"
         description="Figma Prototype"
         href="https://www.figma.com/proto/LNS4BfknCabAt5Ry1wuWqy/Souvik-WebPage?page-id=0%3A1&type=design&node-id=1-2&viewport=-3077%2C-2966%2C0.52&t=axFlkwAb7VHuUusy-1&scaling=contain&starting-point-node-id=1%3A2&mode=design"
-        imageUrl="./figma-mockup.webp"
+        imageUrl="/figma-mockup.webp"
         bgColor="#4e4e56"
         isDark
       />
