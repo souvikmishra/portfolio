@@ -17,12 +17,12 @@ export default function NavBar() {
       animate="animate"
       variants={NavBarAnimation}
     >
-      <div className="flex items-center gap-[1ch]">
+      <Link href={'/'} className="flex items-center gap-[1ch]">
         <div className="h-5 w-5 rounded-full bg-yellow-400" />
         <span className="text-sm font-semibold tracking-widest dark:text-white">
           AVGWEB.DEV
         </span>
-      </div>
+      </Link>
       <div className="md:text-md flex gap-4 text-sm text-zinc-500 md:gap-12 dark:text-zinc-300">
         <Link href={'/'} className={basePath === '/' ? selectedRouteClass : ''}>
           Home
