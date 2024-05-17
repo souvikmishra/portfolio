@@ -2,7 +2,7 @@
 title: Choosing a design for my website
 date: '2024-05-17'
 description: The next iteration of this series where I talk about choosing a design for my portfolio website and the thought process behind it.
-tags: ['design', 'portfolio']
+tags: ['portfolio', 'design']
 ---
 
 This blog is part of a series that I am writing to document my journey of creating a portfolio website from scratch. If you haven’t read the previous blog I highly recommend you to go and check it out. It walks you through the whole process of [How I managed to convince myself to create a portfolio website](/blog/building_portfolio_1).

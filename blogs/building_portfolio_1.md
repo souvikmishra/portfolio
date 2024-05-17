@@ -2,7 +2,7 @@
 title: How I managed to convince myself to build a portfolio website
 date: '2024-05-16'
 description: A blog post about how I convinced myself to build a portfolio website and the thought process behind it.
-tags: ['motivation', 'portfolio']
+tags: ['portfolio', 'motivation']
 ---
 
 In this series of blog posts I would walk you through my learning journey as I create my online portfolio for the first time. From getting the motivation behind it, to setting up the project and learning how to optimise the hell out of it, we’ll leave no leaf unturned 🍀. So, like any other reasonable human being let’s understand why I _actually_ went through with this project and not just watch a 2hr video on YouTube and why **you too** should build your portfolio website.
