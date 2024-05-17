@@ -22,7 +22,9 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={`${inter.className} h-dvh mx-auto w-[1080px] max-w-[90%] bg-white dark:bg-[#0c0c0c] tablet:max-w-[95%]`}>
+      <body
+        className={`${inter.className} mx-auto h-dvh w-[1080px] max-w-[90%] bg-white tablet:max-w-[95%] dark:bg-[#0c0c0c]`}
+      >
         <NavBar />
         {children}
         <Analytics />

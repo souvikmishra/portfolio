@@ -38,36 +38,25 @@ export default function BlogPostPreview({
         isFeatured ? FeaturedBlogPreviewAnimation : BentoFadeInAnimation
       }
     >
-      <div className="rounded-3xl border border-gray-200 group hover:bg-gray-200 bg-transparent text-gray-200 transition-all duration-500 ease-out hover:scale-[1.02] focus-visible:scale-[1.02]">
+      <div className="group rounded-3xl border border-gray-200 bg-transparent text-gray-200 transition-all duration-500 ease-out hover:scale-[1.02] hover:bg-gray-200 focus-visible:scale-[1.02]">
         <Link
           href={`/blog/${slug}`}
-          className="flex lg:flex-row flex-col h-full w-full cursor-pointer justify-between gap-4 px-6 py-6 text-gray-200 group-hover:text-gray-900"
+          className="flex h-full w-full cursor-pointer flex-col justify-between gap-4 px-6 py-6 text-gray-200 group-hover:text-gray-900 lg:flex-row"
         >
           <div className="flex w-full flex-col">
-            <div className="flex mb-4 items-center gap-2 text-xs ">
-            <span>{readingTime}</span> |
+            <div className="mb-4 flex items-center gap-2 text-xs ">
+              <span>{readingTime}</span> |
               {tags.map((tag) => (
-                <span
-                  key={tag}
-                >
-                  {tag}
-                </span>
-              ))} 
+                <span key={tag}>{tag}</span>
+              ))}
             </div>
-            <h2
-              className="text-2xl font-medium"
-              
-            >
-              {title}
-            </h2>
-            <p
-              className="mt-1 text-sm text-zinc-500"
-            >
-              {description}
-            </p>
+            <h2 className="text-2xl font-medium">{title}</h2>
+            <p className="mt-1 text-sm text-zinc-500">{description}</p>
           </div>
           <div className="flex flex-col justify-end">
-              <span className="text-base whitespace-nowrap">{getFormattedDate(date)}</span>
+            <span className="whitespace-nowrap text-base">
+              {getFormattedDate(date)}
+            </span>
           </div>
         </Link>
       </div>
