@@ -64,7 +64,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
                 href={`/blog/${prevPostSlug}`}
                 className="flex items-center"
               >
-                Read Previous Blog
+                Previous blog
               </Link>
             )}
             <Link href="/blog">Back to home</Link>
@@ -73,7 +73,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
                 href={`/blog/${nextPostSlug}`}
                 className="flex items-center"
               >
-                Read Next Blog
+                Next blog
               </Link>
             )}
           </p>
