@@ -13,9 +13,9 @@ export default function Contact() {
       variants={ContactAnimation}
     >
       <div className="mb-6 flex flex-col gap-8 rounded-3xl bg-[url('/gradient-bg.webp')] bg-cover p-10 tablet:gap-16">
-        <h1 className="text-4xl font-semibold">
+        <h3 className="text-4xl font-semibold">
           Want to work together? Let&apos;s talk!
-        </h1>
+        </h3>
         <p className="tablet:flex-1">
           Feel free to reach out if you have any questions. I&apos;m always
           available for a quick chat.
