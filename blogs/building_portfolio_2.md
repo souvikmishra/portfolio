@@ -33,7 +33,7 @@ With all the tools needed to create a blueprint for my website I opened up [Figm
 
 After jotting these things down and basing my design decisions on them, I finally ended up with this. Not too shabby right? RIGHT?. But I still wanted to integrate a blog in my portfolio because that was one of the core features that drove me to pursue this project. But I told myself, “let’s not get ahead of ourselves and work as an iterator rather than a perfectionist.” (Yes, I actually said that to myself, I’m weird)
 
-Spoiler Alert: I did integrate a blog 🤓
+Spoiler Alert! I did integrate a blog. 🤓
 
 ## 🏁 Finishing up the design and next steps
 
