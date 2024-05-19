@@ -40,7 +40,7 @@ export default function BlogPostPreview({
     >
       <Link
         href={`/blog/${slug}`}
-        className="flex h-full w-full cursor-pointer flex-col justify-between gap-4 rounded-3xl border border-gray-200 bg-transparent px-6 py-6 text-gray-200 transition-all duration-500 ease-out hover:scale-[1.02] hover:bg-gray-200 hover:text-gray-900 focus-visible:scale-[1.02] lg:flex-row"
+        className="flex h-full w-full cursor-pointer flex-col justify-between gap-4 rounded-3xl border border-gray-200 bg-transparent px-6 py-6 text-gray-200 transition-all duration-500 ease-out hover:scale-[1.02] hover:bg-gray-200 hover:text-gray-900 focus:scale-[1.02] focus:bg-gray-200 focus:text-gray-900 lg:flex-row"
       >
         <div className="flex w-full flex-col">
           <div className="mb-4 flex items-center gap-2 text-xs">

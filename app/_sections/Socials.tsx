@@ -22,45 +22,54 @@ const LABELS = {
   EMAIL: 'Contact me via email',
 }
 
+const SOCIAL_BUTTONS = [
+  {
+    href: LINKS.INSTAGRAM,
+    ariaLabel: LABELS.INSTAGRAM,
+    bgColor: 'instagram',
+    icon: <AiFillInstagram className="h-5 w-5" />,
+  },
+  {
+    href: LINKS.GITHUB,
+    ariaLabel: LABELS.GITHUB,
+    bgColor: 'github',
+    icon: <TfiGithub className="h-5 w-5" />,
+  },
+  {
+    href: LINKS.LINKEDIN,
+    ariaLabel: LABELS.LINKEDIN,
+    bgColor: 'linkedin',
+    icon: <TfiLinkedin className="h-5 w-5" />,
+  },
+  {
+    href: LINKS.TWITTER,
+    ariaLabel: LABELS.TWITTER,
+    bgColor: 'twitter',
+    icon: <RiTwitterFill className="h-5 w-5" />,
+  },
+]
+
 export default function Socials() {
   return (
     <div className="flex flex-col items-center gap-4 justify-self-end tablet:flex-row">
       <Link
         href={LINKS.EMAIL}
         aria-label={LABELS.EMAIL}
-        className="w-full whitespace-nowrap rounded-full bg-black px-12 py-3 text-center font-medium text-white transition-all duration-300 ease-in-out hover:translate-y-[-0.25rem] hover:bg-transparent hover:text-black hover:outline hover:outline-1 hover:outline-black focus-visible:translate-y-[-0.25rem] focus-visible:bg-transparent focus-visible:text-black tablet:w-[185px] tablet:min-w-[185px]"
+        className="w-full whitespace-nowrap rounded-full bg-black px-12 py-3 text-center font-medium text-white outline-none transition-all duration-300 ease-in-out hover:translate-y-[-0.25rem] hover:bg-transparent hover:text-black hover:outline hover:outline-black focus:translate-y-[-0.25rem] focus:bg-transparent focus:text-black focus:outline focus:outline-black tablet:w-[185px] tablet:min-w-[185px]"
       >
         Contact Me
       </Link>
       <div className="items-between mt-2 flex w-full justify-between tablet:mt-0 tablet:w-auto tablet:gap-4">
-        <SocialButton
-          href={LINKS.INSTAGRAM}
-          ariaLabel={LABELS.INSTAGRAM}
-          bgColor="instagram"
-        >
-          <AiFillInstagram className="h-5 w-5" />
-        </SocialButton>
-        <SocialButton
-          href={LINKS.GITHUB}
-          ariaLabel={LABELS.GITHUB}
-          bgColor="github"
-        >
-          <TfiGithub className="h-5 w-5" />
-        </SocialButton>
-        <SocialButton
-          href={LINKS.LINKEDIN}
-          ariaLabel={LABELS.LINKEDIN}
-          bgColor="linkedin"
-        >
-          <TfiLinkedin className="h-5 w-5" />
-        </SocialButton>
-        <SocialButton
-          href={LINKS.TWITTER}
-          ariaLabel={LABELS.TWITTER}
-          bgColor="twitter"
-        >
-          <RiTwitterFill className="h-5 w-5" />
-        </SocialButton>
+        {SOCIAL_BUTTONS.map((button) => (
+          <SocialButton
+            href={button.href}
+            ariaLabel={button.ariaLabel}
+            bgColor={button.bgColor}
+            key={button.href}
+          >
+            {button.icon}
+          </SocialButton>
+        ))}
       </div>
     </div>
   )

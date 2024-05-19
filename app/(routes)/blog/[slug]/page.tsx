@@ -58,7 +58,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
 
         <article>
           <section dangerouslySetInnerHTML={{ __html: contentHtml }}></section>
-          <p className="mt-12 flex items-center justify-between">
+          <p className="mb-20 mt-12 flex items-center justify-between">
             {prevPostSlug !== null && (
               <Link
                 href={`/blog/${prevPostSlug}`}

@@ -12,25 +12,39 @@ export default function NavBar() {
 
   return (
     <motion.nav
-      className="flex justify-between  py-4"
+      className="flex justify-between"
       initial="initial"
       animate="animate"
       variants={NavBarAnimation}
     >
-      <Link href={'/'} className="flex items-center gap-[1ch]">
-        <div className="h-5 w-5 rounded-full bg-yellow-400" />
-        <span className="text-sm font-semibold tracking-widest dark:text-white">
-          AVGWEB.DEV
-        </span>
-      </Link>
-      <div className="md:text-md flex gap-4 text-sm text-zinc-500 md:gap-12 dark:text-zinc-300">
-        <Link href={'/'} className={basePath === '/' ? selectedRouteClass : ''}>
+      <div className="py-2">
+        <Link href={'/'} className="flex items-center gap-[1ch] py-2  ">
+          <div className="h-5 w-5 rounded-full bg-yellow-400" />
+          <span className="text-sm font-semibold tracking-widest dark:text-white">
+            AVGWEB.DEV
+          </span>
+        </Link>
+      </div>
+      <div className="md:text-md flex py-2 text-sm text-zinc-500 dark:text-zinc-300">
+        <Link
+          href={'/'}
+          className={`rounded-md px-4 py-2 outline-none hover:bg-zinc-900 focus:bg-zinc-900 focus:outline-none ${
+            basePath === '/' ? selectedRouteClass : ''
+          }`}
+        >
           Home
         </Link>
-        <Link href={'/#projects'}>Projects</Link>
+        <Link
+          href={'/#projects'}
+          className="rounded-md px-4 py-2 outline-none hover:bg-zinc-900 focus:bg-zinc-900 focus:outline-none"
+        >
+          Projects
+        </Link>
         <Link
           href={'/myspace'}
-          className={basePath !== '/' ? selectedRouteClass : ''}
+          className={`${
+            basePath !== '/' ? selectedRouteClass : ''
+          } rounded-md px-4 py-2 outline-none hover:bg-zinc-900 focus:bg-zinc-900 focus:outline-none`}
         >
           My Space
         </Link>

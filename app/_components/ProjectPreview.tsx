@@ -35,7 +35,7 @@ export default function ProjectPreview({
         className="group relative block h-full w-full cursor-pointer px-10 py-6"
       >
         <div
-          className="absolute left-0 top-0 h-full w-full bg-contain bg-center bg-no-repeat transition-all duration-500 ease-in-out hover:scale-110 focus-visible:scale-110"
+          className="absolute left-0 top-0 h-full w-full bg-contain bg-center bg-no-repeat transition-all duration-500 ease-in-out hover:scale-110 group-focus:scale-110"
           style={{ backgroundImage: `url('${imageUrl}')` }}
         ></div>
         <div className="flex justify-between">
@@ -53,7 +53,7 @@ export default function ProjectPreview({
               {description}
             </p>
           </div>
-          <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-white group-focus-within:outline group-focus:outline-2 group-focus:outline-offset-1 group-focus:outline-blue-800">
+          <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-white outline-none group-focus:outline group-focus:outline-white">
             <GoArrowUpRight className="h-6 w-6" />
           </div>
         </div>

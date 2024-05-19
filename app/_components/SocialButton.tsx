@@ -18,23 +18,25 @@ export default function SocialButton({
   let bgFocusColorClass = ''
   switch (bgColor) {
     case 'instagram':
-      bgFocusColorClass = 'focus-visible:bg-instagram'
+      bgFocusColorClass =
+        'focus:bg-instagram focus:outline focus:outline-instagram'
       bgHoverColorClass = 'hover:bg-instagram'
       break
     case 'github':
-      bgFocusColorClass = 'focus-visible:bg-github'
+      bgFocusColorClass = 'focus:bg-github focus:outline focus:outline-github'
       bgHoverColorClass = 'hover:bg-github'
       break
     case 'linkedin':
-      bgFocusColorClass = 'focus-visible:bg-linkedin'
+      bgFocusColorClass =
+        'focus:bg-linkedin focus:outline focus:outline-linkedin'
       bgHoverColorClass = 'hover:bg-linkedin'
       break
     case 'twitter':
-      bgFocusColorClass = 'focus-visible:bg-twitter'
+      bgFocusColorClass = 'focus:bg-twitter focus:outline focus:outline-twitter'
       bgHoverColorClass = 'hover:bg-twitter'
       break
     default:
-      bgFocusColorClass = 'focus-visible:bg-black'
+      bgFocusColorClass = 'focus:bg-black focus:outline focus:outline-black'
       bgHoverColorClass = 'hover:bg-black'
       break
   }
@@ -44,9 +46,9 @@ export default function SocialButton({
       target="_blank"
       href={href}
       aria-label={ariaLabel}
-      className={`group h-12 w-12 bg-white hover:translate-y-[-0.25rem] focus-visible:translate-y-[-0.25rem] ${bgHoverColorClass} ${bgFocusColorClass} flex items-center justify-center rounded-full transition-all duration-300 ease-in-out`}
+      className={`group h-12 w-12 bg-white outline-none hover:translate-y-[-0.25rem] focus:translate-y-[-0.25rem] ${bgHoverColorClass} ${bgFocusColorClass} flex items-center justify-center rounded-full transition-all duration-300 ease-in-out`}
     >
-      <div className="text-black transition-all duration-300 ease-in-out group-hover:text-white group-focus-visible:text-white">
+      <div className="text-black transition-all duration-300 ease-in-out group-hover:text-white group-focus:text-white">
         {children}
       </div>
     </Link>
