@@ -16,24 +16,21 @@ export default function Intro() {
         variants={HeroLeftAnimation}
       >
         <h1 className="text-4xl font-semibold">
-          {/* TODO: make this from tailwind */}
-          <span className="wave">👋</span> Hi! I&apos;m Souvik, a web developer
-          and part-time designer.
+          <span className="wave">👋</span> Hi! I&apos;m Souvik, a web developer,
+          designer and product engineer.
         </h1>
-        <h2 className="tablet:flex-1">
+        <h2 className="text-lg tablet:flex-1">
           I care a lot about using code+design to create a positive impact and
           enjoy creating user-centric and highly-efficient human experiences.
         </h2>
         <Socials />
       </motion.div>
       <motion.div
-        className="group relative h-[30rem] cursor-pointer overflow-hidden rounded-3xl bg-[url('/outline-hero.svg')]  bg-cover bg-center p-8 dark:contrast-[1.15]"
+        className="h-[30rem] rounded-3xl bg-[url('/outline-hero.svg')] bg-cover bg-center bg-no-repeat p-8"
         initial="initial"
         animate="animate"
         variants={HeroRightAnimation}
-      >
-        <div className="absolute left-0 top-0 h-full w-full  bg-[url('/portfolio-headshot.webp')] bg-cover bg-center opacity-0 duration-500 ease-in-out group-hover:opacity-100"></div>
-      </motion.div>
+      ></motion.div>
     </section>
   )
 }
