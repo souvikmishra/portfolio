@@ -1,4 +1,4 @@
-import Blogs from '../../_components/Blogs'
+import Blogs from '@sections/Blogs'
 
 export default function Index() {
   return <Blogs />

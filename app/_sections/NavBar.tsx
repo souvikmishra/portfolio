@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { NavBarAnimation } from '../_utilities/animations'
+import { NavBarAnimation } from '@utilities/animations'
 import React from 'react'
 import { motion } from 'framer-motion'
 import { usePathname } from 'next/navigation'
@@ -29,10 +29,10 @@ export default function NavBar() {
         </Link>
         <Link href={'/#projects'}>Projects</Link>
         <Link
-          href={'/blog'}
-          className={basePath.includes('/blog') ? selectedRouteClass : ''}
+          href={'/myspace'}
+          className={basePath.includes('/myspace') ? selectedRouteClass : ''}
         >
-          Blog
+          My Space
         </Link>
       </div>
     </motion.nav>

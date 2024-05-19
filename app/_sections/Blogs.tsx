@@ -1,6 +1,6 @@
 import React from 'react'
-import BlogPostPreview from './BlogPostPreview'
-import { getBlogsData } from '../_utilities/blogs'
+import BlogPostPreview from '@components/BlogPostPreview'
+import { getBlogsData } from '@utilities/blogs'
 
 function Blogs() {
   const blogs = getBlogsData()

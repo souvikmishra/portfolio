@@ -3,10 +3,10 @@
 import {
   BentoFadeInAnimation,
   FeaturedBlogPreviewAnimation,
-} from '../_utilities/animations'
+} from '@utilities/animations'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import getFormattedDate from '../_utilities/getFormattedDate'
+import getFormattedDate from '@utilities/getFormattedDate'
 
 interface Props {
   slug: string

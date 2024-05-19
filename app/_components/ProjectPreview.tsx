@@ -1,4 +1,4 @@
-import { BentoFadeInAnimation } from '../_utilities/animations'
+import { BentoFadeInAnimation } from '@utilities/animations'
 import { GoArrowUpRight } from 'react-icons/go'
 import Link from 'next/link'
 import React from 'react'

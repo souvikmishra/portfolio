@@ -3,7 +3,7 @@ import './globals.css'
 import { Analytics } from '@vercel/analytics/react'
 import { Inter } from 'next/font/google'
 import type { Metadata } from 'next'
-import NavBar from '../_components/NavBar'
+import NavBar from '@sections/NavBar'
 
 const inter = Inter({ subsets: ['latin'] })
 

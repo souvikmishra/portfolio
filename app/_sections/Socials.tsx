@@ -4,7 +4,7 @@ import { AiFillInstagram } from 'react-icons/ai'
 import Link from 'next/link'
 import React from 'react'
 import { RiTwitterFill } from 'react-icons/ri'
-import SocialButton from './SocialButton'
+import SocialButton from '@components/SocialButton'
 
 const LINKS = {
   TWITTER: 'https://twitter.com/kivous911',
