@@ -30,7 +30,7 @@ export default function NavBar() {
         <Link href={'/#projects'}>Projects</Link>
         <Link
           href={'/myspace'}
-          className={basePath.includes('/myspace') ? selectedRouteClass : ''}
+          className={basePath !== '/' ? selectedRouteClass : ''}
         >
           My Space
         </Link>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function MySpace() {
@@ -58,7 +59,7 @@ function MySpace() {
       <ul className="not-prose flex flex-col gap-1 text-gray-200">
         {MY_SPACE_LINKS.map((link) => (
           <li key={link.slug}>
-            <a
+            <Link
               href={link.slug}
               target={link.isExternal ? '_blank' : ''}
               className={`flex items-start duration-300 ease-in-out hover:translate-x-2 ${
@@ -74,7 +75,7 @@ function MySpace() {
               >
                 {link.name}
               </span>
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
