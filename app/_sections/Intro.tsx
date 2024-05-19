@@ -16,7 +16,9 @@ export default function Intro() {
         variants={HeroLeftAnimation}
       >
         <h1 className="text-4xl font-semibold">
-          👋 Hi! I&apos;m Souvik, a web developer and part-time designer.
+          {/* TODO: make this from tailwind */}
+          <span className="wave">👋</span> Hi! I&apos;m Souvik, a web developer
+          and part-time designer.
         </h1>
         <h2 className="tablet:flex-1">
           I care a lot about using code+design to create a positive impact and
