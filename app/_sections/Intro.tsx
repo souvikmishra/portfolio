@@ -25,11 +25,13 @@ export default function Intro() {
         <Socials />
       </motion.div>
       <motion.div
-        className="h-[30rem] rounded-3xl bg-[url('/portfolio-headshot.webp')] bg-cover bg-center p-8 dark:contrast-[1.15]"
+        className="group relative h-[30rem] cursor-pointer overflow-hidden rounded-3xl bg-[url('/outline-hero.svg')]  bg-cover bg-center p-8 dark:contrast-[1.15]"
         initial="initial"
         animate="animate"
         variants={HeroRightAnimation}
-      ></motion.div>
+      >
+        <div className="absolute left-0 top-0 h-full w-full  bg-[url('/portfolio-headshot.webp')] bg-cover bg-center opacity-0 duration-500 ease-in-out group-hover:opacity-100"></div>
+      </motion.div>
     </section>
   )
 }
