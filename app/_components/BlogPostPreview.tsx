@@ -1,9 +1,6 @@
 'use client'
 
-import {
-  BentoFadeInAnimation,
-  FeaturedBlogPreviewAnimation,
-} from '@utilities/animations'
+import { BentoFadeInAnimation } from '@utilities/animations'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import getFormattedDate from '@utilities/getFormattedDate'
