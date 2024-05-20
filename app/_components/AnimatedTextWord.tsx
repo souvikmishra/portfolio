@@ -31,17 +31,17 @@ const AnimatedTextWord = ({
       y: 0,
       transition: {
         type: 'spring',
-        damping: 15,
-        stiffness: 120,
+        damping: 20,
+        stiffness: 200,
       },
     },
     hidden: {
       opacity: 0,
-      y: 5,
+      y: 10,
       transition: {
         type: 'spring',
-        damping: 15,
-        stiffness: 120,
+        damping: 20,
+        stiffness: 200,
       },
     },
   }
