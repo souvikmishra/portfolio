@@ -44,7 +44,7 @@ export default function NavBar() {
           href={'/myspace'}
           className={`${
             basePath !== '/' ? selectedRouteClass : ''
-          } rounded-md px-2 py-2 outline-none hover:bg-zinc-900 focus:bg-zinc-900 focus:outline-none  md:px-4`}
+          } whitespace-nowrap rounded-md px-2 py-2 outline-none hover:bg-zinc-900 focus:bg-zinc-900 focus:outline-none  md:px-4`}
         >
           My Space
         </Link>
