@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import getFormattedDate from '@/app/_utilities/getFormattedDate'
 import Link from 'next/link'
 import { getBlogData, getBlogsData } from '@/app/_utilities/blogs'
+import { ScrollProgressIndicator } from '@components/ScrollProgressIndicator'
 
 export function generateStaticParams() {
   const posts = getBlogsData()
@@ -49,6 +50,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
 
   return (
     <main className="mx-auto w-full rounded-3xl pt-4 lg:pt-8">
+      <ScrollProgressIndicator />
       <div className="prose prose-invert mx-auto">
         <h1>{title}</h1>
         <div className="-mt-4 mb-8 flex items-end justify-between">
