@@ -34,9 +34,7 @@ export default function BlogPostPreview({
     <motion.div
       initial="initial"
       whileInView="animate"
-      variants={
-        isFeatured ? FeaturedBlogPreviewAnimation : BentoFadeInAnimation
-      }
+      variants={BentoFadeInAnimation}
     >
       <Link
         href={`/blog/${slug}`}

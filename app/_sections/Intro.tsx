@@ -1,10 +1,11 @@
 'use client'
 
-import { HeroLeftAnimation, HeroRightAnimation } from '../_utilities/animations'
+import { HeroLeftAnimation, HeroRightAnimation } from '@utilities/animations'
 
 import React from 'react'
 import Socials from './Socials'
 import { motion } from 'framer-motion'
+import AnimatedTextWord from '@components/AnimatedTextWord'
 
 export default function Intro() {
   return (
@@ -15,18 +16,24 @@ export default function Intro() {
         animate="animate"
         variants={HeroLeftAnimation}
       >
-        <h1 className="text-4xl font-semibold">
-          <span className="wave">👋</span> Hi! I&apos;m Souvik, a web developer,
-          designer and product engineer.
+        <h1 className="flex text-4xl font-semibold">
+          <AnimatedTextWord
+            prefixIcon="👋"
+            text="Hi! I'm Souvik, a web developer,
+          designer and product engineer."
+          />
         </h1>
         <h2 className="text-lg tablet:flex-1">
-          I care a lot about using code+design to create a positive impact and
-          enjoy creating user-centric and highly-efficient human experiences.
+          <AnimatedTextWord
+            delay={1.7}
+            text="I care a lot about using code & design to create a positive impact and
+          enjoy creating user centric and highly efficient human experiences."
+          />
         </h2>
         <Socials />
       </motion.div>
       <motion.div
-        className="h-[30rem] rounded-3xl bg-[url('/outline-hero.svg')] bg-cover bg-center bg-no-repeat p-8"
+        className="flex h-[30rem] rounded-3xl bg-[url('/outline-hero.svg')] bg-cover bg-center bg-no-repeat p-8"
         initial="initial"
         animate="animate"
         variants={HeroRightAnimation}
