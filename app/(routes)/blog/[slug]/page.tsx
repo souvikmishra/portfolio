@@ -57,7 +57,6 @@ export default async function Post({ params }: { params: { slug: string } }) {
           <p className="not-prose text-base">{pubDate}</p>
           <p className="not-prose text-sm">{readingTime}</p>
         </div>
-
         <article>
           <section dangerouslySetInnerHTML={{ __html: contentHtml }}></section>
           <p className="mb-20 mt-12 flex items-center justify-between">
