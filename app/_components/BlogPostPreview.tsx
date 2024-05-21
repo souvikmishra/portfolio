@@ -24,11 +24,10 @@ export default function BlogPostPreview({
   date = '0000-00-00',
   slug = 'test-slug',
   readingTime = '4 min read',
-  isFeatured = false,
   description = 'This is a test description',
 }: Props) {
   return (
-    <motion.div
+    <motion.article
       initial="initial"
       whileInView="animate"
       variants={BentoFadeInAnimation}
@@ -53,6 +52,6 @@ export default function BlogPostPreview({
           </span>
         </div>
       </Link>
-    </motion.div>
+    </motion.article>
   )
 }

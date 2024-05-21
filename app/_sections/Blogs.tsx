@@ -6,11 +6,11 @@ function Blogs() {
   const blogs = getBlogsData()
   return (
     <section id="projects">
-      <ul className="flex flex-col gap-4">
+      <div className="mb-6 flex flex-col gap-4">
         {blogs.map((blog) => (
           <BlogPostPreview {...blog} key={blog.slug} />
         ))}
-      </ul>
+      </div>
     </section>
   )
 }

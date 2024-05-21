@@ -32,7 +32,7 @@ export default function ProjectPreview({
       <Link
         href={href}
         target={href === '#' ? '' : '_blank'}
-        className="group relative block h-full w-full cursor-pointer px-10 py-6"
+        className="group relative block h-full w-full cursor-pointer p-6 md:px-10"
       >
         <div
           className="absolute left-0 top-0 h-full w-full bg-contain bg-center bg-no-repeat transition-all duration-500 ease-in-out hover:scale-110 group-focus:scale-110"

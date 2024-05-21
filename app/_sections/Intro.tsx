@@ -11,7 +11,7 @@ export default function Intro() {
   return (
     <section className="mb-4 grid grid-cols-1 gap-4 tablet:grid-cols-[8fr_4fr]">
       <motion.div
-        className="flex flex-col gap-8 rounded-3xl bg-[url('/gradient-bg.webp')] bg-cover p-10 tablet:h-[30rem] tablet:gap-16"
+        className="flex flex-col gap-8 rounded-3xl bg-[url('/gradient-bg.webp')] bg-cover px-6 py-8 md:p-10 tablet:h-[30rem] tablet:gap-16"
         initial="initial"
         animate="animate"
         variants={HeroLeftAnimation}
@@ -33,7 +33,7 @@ export default function Intro() {
         <Socials />
       </motion.div>
       <motion.div
-        className="flex h-[30rem] rounded-3xl bg-[url('/outline-hero.svg')] bg-cover bg-center bg-no-repeat p-8"
+        className="flex h-[30rem] rounded-3xl bg-[url('/outline-hero.svg')] bg-cover bg-center bg-no-repeat"
         initial="initial"
         animate="animate"
         variants={HeroRightAnimation}

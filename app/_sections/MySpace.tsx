@@ -105,7 +105,7 @@ function MySpace() {
   }
 
   return (
-    <section id="myspace" className="prose prose-invert mx-auto">
+    <section id="myspace" className="prose prose-invert mx-auto mb-6">
       <motion.h1
         initial="hidden"
         animate="visible"
