@@ -20,7 +20,7 @@ export default function Intro() {
         animate="animate"
         variants={HeroLeftAnimation}
       >
-        <h1 className="flex text-4xl font-semibold">
+        <h1 className="flex text-3xl font-semibold md:text-4xl">
           <AnimatedTextWord
             prefixIcon="👋"
             text="Hi! I'm Souvik, a web developer,
