@@ -13,14 +13,14 @@ export default function Contact() {
       variants={ContactAnimation}
     >
       <div className="mb-6 flex flex-col gap-8 rounded-3xl bg-[url('/gradient-bg.webp')] bg-cover px-6 py-8 md:p-10 tablet:gap-16">
-        <h3 className="text-4xl font-semibold">
+        <h3 className="text-3xl font-semibold md:text-4xl">
           Want to work together? Let&apos;s talk!
         </h3>
         <div className="flex flex-wrap items-center justify-between tablet:flex-nowrap">
-          <p className="text-lg tablet:flex-1">
+          <p className="max-w-[55ch] text-lg tablet:flex-1">
             Feel free to reach out if you have any questions. I&apos;m always
-            available for a quick chat.
-            <br /> Unless its 3 A.M. then I&apos;m probably working.
+            available for a quick chat. Unless its 3 A.M. then I&apos;m probably
+            working.
           </p>
           <span className="mt-4 flex w-full justify-center pr-0 text-7xl tablet:w-auto tablet:pr-14 tablet:text-9xl">
             👨🏽‍💻
