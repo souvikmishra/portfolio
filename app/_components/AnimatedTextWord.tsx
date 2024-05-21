@@ -19,7 +19,7 @@ const AnimatedTextWord = ({
     visible: (i = 1) => ({
       opacity: 1,
       transition: {
-        staggerChildren: 0.14,
+        staggerChildren: 0.15,
         delayChildren: calculatedDelay + 0.06 * i,
       },
     }),
@@ -37,7 +37,7 @@ const AnimatedTextWord = ({
     },
     hidden: {
       opacity: 0,
-      y: 10,
+      y: 3,
       transition: {
         type: 'spring',
         damping: 20,

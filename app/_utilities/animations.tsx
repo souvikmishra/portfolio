@@ -54,3 +54,16 @@ export const BentoFadeInAnimation = {
     },
   },
 }
+export const HeroSubtextAnimation = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: 'spring',
+      damping: 15,
+      stiffness: 120,
+      delay: 1.7,
+    },
+  },
+}

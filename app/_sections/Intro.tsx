@@ -1,6 +1,10 @@
 'use client'
 
-import { HeroLeftAnimation, HeroRightAnimation } from '@utilities/animations'
+import {
+  HeroLeftAnimation,
+  HeroRightAnimation,
+  HeroSubtextAnimation,
+} from '@utilities/animations'
 
 import React from 'react'
 import Socials from './Socials'
@@ -23,13 +27,15 @@ export default function Intro() {
           designer and product engineer."
           />
         </h1>
-        <h2 className="text-lg tablet:flex-1">
-          <AnimatedTextWord
-            delay={1.7}
-            text="I care a lot about using code & design to create a positive impact and
-          enjoy creating user centric and highly efficient human experiences."
-          />
-        </h2>
+        <motion.h2
+          initial="hidden"
+          animate="visible"
+          variants={HeroSubtextAnimation}
+          className="text-lg tablet:flex-1"
+        >
+          I care a lot about using code & design to create a positive impact and
+          enjoy creating user centric and highly efficient human experiences.
+        </motion.h2>
         <Socials />
       </motion.div>
       <motion.div
