@@ -1,7 +1,7 @@
 ---
 title: Choosing a design for my website
 date: '2024-05-17'
-description: The next iteration of this series where I talk about choosing a design for my portfolio website and the thought process behind it.
+description: The next iteration of of the portfolio series where I talk about choosing a design for my website and the thought process behind it.
 tags: ['portfolio', 'design']
 ---
 

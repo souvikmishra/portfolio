@@ -1,7 +1,7 @@
 ---
-title: Setting up and developing this site
+title: Setting up and developing this website
 date: '2024-05-18'
-description: The next iteration of this series where I talk about choosing the tech stack for my portfolio website and the thought process behind it.
+description: The next iteration of the portfolio series where I talk about choosing the tech stack for my website and the thought process behind it.
 tags: ['portfolio', 'tools']
 ---
 
