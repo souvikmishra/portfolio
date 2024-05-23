@@ -14,7 +14,8 @@ function MySpace() {
     {
       name: 'Poems to express my personal journey',
       emoji: '📝',
-      slug: '/poems',
+      slug: '/poem',
+      active: true,
     },
     {
       name: 'Sketches to keep my artistic side alive',

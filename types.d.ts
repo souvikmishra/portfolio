@@ -6,3 +6,9 @@ type BlogPost = {
   description: string
   readingTime: string
 }
+
+type Poem = {
+  slug: string
+  title: string
+  date: string
+}
