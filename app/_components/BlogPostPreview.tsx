@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import getFormattedDate from '@utilities/getFormattedDate'
 
-interface Props {
+interface BlogProps {
   slug: string
   title: string
   description: string
@@ -25,7 +25,7 @@ export default function BlogPostPreview({
   slug = 'test-slug',
   readingTime = '4 min read',
   description = 'This is a test description',
-}: Props) {
+}: BlogProps) {
   return (
     <motion.article
       initial="initial"
@@ -34,7 +34,7 @@ export default function BlogPostPreview({
     >
       <Link
         href={`/blog/${slug}`}
-        className="flex h-full w-full cursor-pointer flex-col justify-between gap-4 rounded-3xl border border-gray-200 bg-transparent px-6 py-6 text-gray-200 transition-all duration-500 ease-out hover:scale-[1.02] hover:bg-gray-200 hover:text-gray-900 focus:scale-[1.02] focus:bg-gray-200 focus:text-gray-900 lg:flex-row"
+        className="flex h-full w-full cursor-pointer flex-col justify-between gap-4 rounded-3xl border border-gray-200 bg-transparent p-6 text-gray-200 transition-all duration-500 ease-out hover:scale-[1.02] hover:bg-gray-200 hover:text-gray-900 focus:scale-[1.02] focus:bg-gray-200 focus:text-gray-900 lg:flex-row"
       >
         <div className="flex w-full flex-col">
           <div className="mb-4 flex items-center gap-2 text-xs">

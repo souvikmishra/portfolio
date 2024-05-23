@@ -4,13 +4,13 @@ import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
 
-const postsDirectory = path.join(process.cwd(), 'blogs')
+const blogsDirectory = path.join(process.cwd(), 'blogs')
 
 export function getBlogsData(sortDirection: 'asc' | 'desc' = 'desc') {
-  const fileNames = fs.readdirSync(postsDirectory)
+  const fileNames = fs.readdirSync(blogsDirectory)
   const allBlogsData = fileNames.map((fileName) => {
     const slug = fileName.replace(/\.md$/, '')
-    const fullPath = path.join(postsDirectory, fileName)
+    const fullPath = path.join(blogsDirectory, fileName)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const matterResult = matter(fileContents)
     const readingTime =
@@ -34,7 +34,7 @@ export function getBlogsData(sortDirection: 'asc' | 'desc' = 'desc') {
 }
 
 export async function getBlogData(slug: string) {
-  const fullPath = path.join(postsDirectory, `${slug}.md`)
+  const fullPath = path.join(blogsDirectory, `${slug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
 
   //use gray-matter to parse the post metadata section

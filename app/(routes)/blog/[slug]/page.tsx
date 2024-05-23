@@ -68,7 +68,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
                 Previous blog
               </Link>
             )}
-            <Link href="/blog">Back to home</Link>
+            <Link href="/blog">Back to blogs</Link>
             {nextPostSlug !== null && (
               <Link
                 href={`/blog/${nextPostSlug}`}
