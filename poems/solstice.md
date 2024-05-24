@@ -1,12 +1,12 @@
 ---
-title: Forcefully
+title: Solistice
 date: '2019-12-19'
 ---
 
 Shards of reflection,
-Ipierce through my lids,
+I pierce through my lids,
 to live once again.
-Snatiching my soul as you
+Snatching my soul as you
 took my pride from me.
 
 The weather induced a

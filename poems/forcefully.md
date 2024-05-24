@@ -4,7 +4,7 @@ date: '2018-12-29'
 ---
 
 Painful to accept
-how inconsiderat I was
+how inconsiderate I was
 to myself.
 Finding solace in
 vessels filled with

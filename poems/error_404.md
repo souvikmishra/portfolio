@@ -7,7 +7,7 @@ I thought only bruises hurt.
 Never experienced a pain
 so immense and not see myself bleed.
 The wounds were deep,
-but no scards were found.
+but no scars were found.
 
 The bearer was the culprit,
 the one who inflicted,
