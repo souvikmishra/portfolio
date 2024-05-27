@@ -5,7 +5,7 @@ description: The next iteration of of the portfolio series where I talk about ch
 tags: ['portfolio', 'design']
 ---
 
-This blog is part of a series that I am writing to document my journey of creating a portfolio website from scratch. If you haven’t read the previous blog I highly recommend you to go and check it out. It walks you through the whole process of [How I managed to convince myself to create a portfolio website](/blog/building_portfolio_1).
+This blog is part of a series that I am writing to document my journey of creating a portfolio website from scratch. If you haven’t read the previous blog I highly recommend you to go and check it out. It walks you through the whole process of [How I managed to convince myself to create a portfolio website](/blogs/building_portfolio_1).
 
 ## 📷 Looking at the bigger picture
 
@@ -37,4 +37,4 @@ Spoiler Alert! I did integrate a blog. 🤓
 
 ## 🏁 Finishing up the design and next steps
 
-With a basic mockup in my hand I now had a clear idea on how the website should look like. As I mentioned before, I really wanted to add a blog section to my portfolio, and I am working on it, so stay tuned for an update on that. Meanwhile, coming back to the present timeline, I chose to move forward with the design at hand. In the next blog, we’ll go over the details of my thought process while [developing the actual site](/blog/building_portfolio_3). Until then stay motivated, stay curious and keep building! ❤️
+With a basic mockup in my hand I now had a clear idea on how the website should look like. As I mentioned before, I really wanted to add a blog section to my portfolio, and I am working on it, so stay tuned for an update on that. Meanwhile, coming back to the present timeline, I chose to move forward with the design at hand. In the next blog, we’ll go over the details of my thought process while [developing the actual site](/blogs/building_portfolio_3). Until then stay motivated, stay curious and keep building! ❤️

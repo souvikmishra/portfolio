@@ -27,4 +27,4 @@ Now, I knew that something needed to be done to address this feeling. And like t
 
 ## 🤩 All pepped up
 
-After hours of sifting through websites and having multiple epiphanies inside my head I was now ready to take on this challenge of building a portfolio of my own and showcase my self portrait to the world. In the next part of this series I’ll walk you through the whole process of [choosing a design for my website](/blog/building_portfolio_2) and my thought process while selecting from the bajillion options that the internet gives us. Till then stay motivated, stay curious and keep building! ❤️
+After hours of sifting through websites and having multiple epiphanies inside my head I was now ready to take on this challenge of building a portfolio of my own and showcase my self portrait to the world. In the next part of this series I’ll walk you through the whole process of [choosing a design for my website](/blogs/building_portfolio_2) and my thought process while selecting from the bajillion options that the internet gives us. Till then stay motivated, stay curious and keep building! ❤️

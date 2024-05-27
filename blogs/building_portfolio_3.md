@@ -5,7 +5,7 @@ description: The next iteration of the portfolio series where I talk about choos
 tags: ['portfolio', 'tools']
 ---
 
-This blog is part of a series that I am writing to document my journey of creating a portfolio website from scratch. I highly recommend that you start with the first one which walks you through the whole process of [how I managed to convince myself to create a portfolio website](/blog/building_portfolio_1).
+This blog is part of a series that I am writing to document my journey of creating a portfolio website from scratch. I highly recommend that you start with the first one which walks you through the whole process of [how I managed to convince myself to create a portfolio website](/blogs/building_portfolio_1).
 
 This particular blog might be a bit longer than the others since I would be getting into the actual nitty-gritties of my development process, the problems that I faced and the thought process behind solving said problems. So I suggest you grab your cup of coffee, sit down and lets get into the meaty stuff _(pause)_.
 
