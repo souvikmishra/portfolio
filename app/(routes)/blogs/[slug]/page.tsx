@@ -62,16 +62,16 @@ export default async function Post({ params }: { params: { slug: string } }) {
           <p className="mb-20 mt-12 flex items-center justify-between">
             {prevPostSlug !== null && (
               <Link
-                href={`/blog/${prevPostSlug}`}
+                href={`/blogs/${prevPostSlug}`}
                 className="flex items-center"
               >
                 Previous blog
               </Link>
             )}
-            <Link href="/blog">Back to blogs</Link>
+            <Link href="/blogs">Back to blogs</Link>
             {nextPostSlug !== null && (
               <Link
-                href={`/blog/${nextPostSlug}`}
+                href={`/blogs/${nextPostSlug}`}
                 className="flex items-center"
               >
                 Next blog

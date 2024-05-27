@@ -33,7 +33,7 @@ export default function BlogPostPreview({
       variants={BentoFadeInAnimation}
     >
       <Link
-        href={`/blog/${slug}`}
+        href={`/blogs/${slug}`}
         className="flex h-full w-full cursor-pointer flex-col justify-between gap-4 rounded-3xl border border-gray-200 bg-transparent p-6 text-gray-200 transition-all duration-500 ease-out hover:scale-[1.02] hover:bg-gray-200 hover:text-gray-900 focus:scale-[1.02] focus:bg-gray-200 focus:text-gray-900 lg:flex-row"
       >
         <div className="flex w-full flex-col">

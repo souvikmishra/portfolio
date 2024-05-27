@@ -59,16 +59,16 @@ export default async function Poem({ params }: { params: { slug: string } }) {
           <p className="mb-20 mt-12 flex items-center justify-between">
             {prevPostSlug !== null && (
               <Link
-                href={`/poem/${prevPostSlug}`}
+                href={`/poems/${prevPostSlug}`}
                 className="flex items-center"
               >
                 Previous poem
               </Link>
             )}
-            <Link href="/poem">Back to poems</Link>
+            <Link href="/poems">Back to poems</Link>
             {nextPoemSlug !== null && (
               <Link
-                href={`/poem/${nextPoemSlug}`}
+                href={`/poems/${nextPoemSlug}`}
                 className="flex items-center"
               >
                 Next poem

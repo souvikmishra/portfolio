@@ -8,13 +8,13 @@ function MySpace() {
     {
       name: 'Blogs to document my journey as a developer',
       emoji: '💻',
-      slug: '/blog',
+      slug: '/blogs',
       active: true,
     },
     {
       name: 'Poems to express my personal journey',
       emoji: '📝',
-      slug: '/poem',
+      slug: '/poems',
       active: true,
     },
     {
