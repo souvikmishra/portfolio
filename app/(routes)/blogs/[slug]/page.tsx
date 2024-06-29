@@ -49,9 +49,9 @@ export default async function Post({ params }: { params: { slug: string } }) {
   const pubDate = getFormattedDate(date)
 
   return (
-    <main className="mx-auto w-full rounded-3xl pt-4 lg:pt-8">
+    <main className="mx-auto w-full rounded-3xl pb-2 pt-4 lg:pt-8">
       <ScrollProgressIndicator />
-      <div className="prose prose-invert mx-auto">
+      <div className="prose mx-auto dark:prose-invert">
         <h1>{title}</h1>
         <div className="-mt-4 mb-8 flex items-end justify-between">
           <p className="not-prose text-base">{pubDate}</p>

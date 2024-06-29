@@ -48,8 +48,8 @@ export default async function Poem({ params }: { params: { slug: string } }) {
   const pubDate = getFormattedDate(date)
 
   return (
-    <main className="mx-auto w-full rounded-3xl pt-4 lg:pt-8">
-      <div className="prose prose-invert mx-auto">
+    <main className="mx-auto w-full rounded-3xl pb-2 pt-4 lg:pt-8">
+      <div className="prose mx-auto dark:prose-invert">
         <h1>{title}</h1>
         <div className="-mt-4 mb-8 flex items-end justify-between">
           <p className="not-prose text-sm">{pubDate}</p>

@@ -24,10 +24,12 @@ function PoemPreview({
       className="group relative rounded-3xl"
     >
       <Link href={`/poems/${slug}`}>
-        <div className="absolute left-0 top-0 h-full w-full rounded-3xl border border-dashed bg-transparent group-hover:border-gray-200"></div>
-        <div className="rounded-3xl border border-gray-200 bg-[#0c0c0c] p-6 transition-all duration-300 ease-in-out group-hover:-translate-x-2 group-hover:-translate-y-2">
-          <h2 className="z-10 text-2xl font-medium text-gray-200">{title}</h2>
-          <p className="z-10 mt-1 text-sm text-zinc-500">
+        <div className="absolute left-0 top-0 h-full w-full rounded-3xl border border-dashed border-gray-900 bg-transparent dark:border-gray-200"></div>
+        <div className="rounded-3xl border-2 border-gray-900 bg-white p-6 transition-all duration-300 ease-in-out group-hover:-translate-x-2 group-hover:-translate-y-2 dark:border-gray-200 dark:bg-[#0c0c0c]">
+          <h2 className="z-10 text-2xl font-medium text-gray-900 dark:text-gray-200">
+            {title}
+          </h2>
+          <p className="z-10 mt-1 text-sm text-zinc-600 dark:text-zinc-500">
             {getFormattedDate(date)}
           </p>
         </div>

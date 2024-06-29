@@ -106,12 +106,12 @@ function MySpace() {
   }
 
   return (
-    <section id="myspace" className="prose prose-invert mx-auto mb-6">
+    <section id="myspace" className="prose mx-auto mb-6 dark:prose-invert">
       <motion.h1
         initial="hidden"
         animate="visible"
         variants={mainTextFadeIn}
-        className="mb-4 mt-6 text-4xl text-gray-200"
+        className="mb-4 mt-6 text-4xl text-gray-900 dark:text-gray-200"
       >
         A place where I put stuff for safekeeping and sharing with folks like
         you!
@@ -120,7 +120,7 @@ function MySpace() {
         initial="hidden"
         animate="visible"
         variants={secondaryTextFadeIn}
-        className="mb-8 leading-6 text-gray-200"
+        className="mb-8 leading-6 text-gray-900 dark:text-gray-200"
       >
         This is my humble space on the internet where I keep stuff that I like,
         create, read or think. It&apos;s a place where I can be myself and
@@ -132,7 +132,7 @@ function MySpace() {
         initial="hidden"
         animate="visible"
         variants={listContainer}
-        className="not-prose flex flex-col text-gray-200"
+        className="not-prose flex flex-col text-gray-900 dark:text-gray-200"
       >
         {MY_SPACE_LINKS.map((link) => (
           <motion.li variants={listItem} key={link.slug}>
@@ -140,8 +140,10 @@ function MySpace() {
               href={link.slug}
               target={link.isExternal ? '_blank' : ''}
               tabIndex={link.active ? 0 : -1}
-              className={`group flex items-start rounded-md px-2 py-1 outline-none duration-300 ease-in-out  hover:translate-x-2 hover:bg-zinc-900 focus:translate-x-2 focus:bg-zinc-900 focus:outline-none ${
-                link.active ? '' : 'no pointer-events-none text-gray-500'
+              className={`group flex items-start rounded-md px-2 py-1 outline-none duration-300 ease-in-out  hover:translate-x-2 hover:bg-zinc-300 focus:translate-x-2 focus:bg-zinc-300 focus:outline-none dark:hover:bg-zinc-900 dark:focus:bg-zinc-900 ${
+                link.active
+                  ? ''
+                  : 'pointer-events-none text-gray-200 dark:text-gray-500'
               }`}
             >
               <span className="text-xl">{link.emoji}</span>

@@ -34,7 +34,10 @@ export default function BlogPostPreview({
     >
       <Link
         href={`/blogs/${slug}`}
-        className="flex h-full w-full cursor-pointer flex-col justify-between gap-4 rounded-3xl border border-gray-200 bg-transparent p-6 text-gray-200 transition-all duration-500 ease-out hover:scale-[1.02] hover:bg-gray-200 hover:text-gray-900 focus:scale-[1.02] focus:bg-gray-200 focus:text-gray-900 lg:flex-row"
+        className="flex h-full w-full cursor-pointer flex-col justify-between gap-4 
+        rounded-3xl border border-gray-900 bg-transparent p-6 transition-all duration-500 ease-out
+         hover:scale-[1.02] hover:bg-gray-900 hover:text-gray-100 focus:scale-[1.02] focus:bg-gray-900 focus:text-gray-100 lg:flex-row
+        dark:border-gray-200 dark:text-gray-200 dark:hover:bg-gray-200 dark:hover:text-gray-900 dark:focus:bg-gray-200 dark:focus:text-gray-900"
       >
         <div className="flex w-full flex-col">
           <div className="mb-4 flex items-center gap-2 text-xs">
@@ -44,7 +47,9 @@ export default function BlogPostPreview({
             ))}
           </div>
           <h2 className="text-2xl font-medium">{title}</h2>
-          <p className="mt-1 text-sm text-zinc-500">{description}</p>
+          <p className="mt-1 text-sm text-zinc-400 dark:text-zinc-500">
+            {description}
+          </p>
         </div>
         <div className="flex flex-col justify-end">
           <span className="whitespace-nowrap text-base">
