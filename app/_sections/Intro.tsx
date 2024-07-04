@@ -13,7 +13,7 @@ import AnimatedTextWord from '@components/AnimatedTextWord'
 
 export default function Intro() {
   return (
-    <section className="mb-4 grid grid-cols-1 gap-4 tablet:grid-cols-[8fr_4fr]">
+    <section className="mb-4 grid grid-cols-1 gap-4 text-black tablet:grid-cols-[8fr_4fr]">
       <motion.div
         className="flex flex-col gap-8 rounded-3xl bg-[url('/gradient-bg.webp')] bg-cover px-6 py-8 md:p-10 tablet:h-[30rem] tablet:gap-16"
         initial="initial"
