@@ -17,11 +17,11 @@ export default function Contact() {
           Want to work together? Let&apos;s talk!
         </h3>
         <div className="flex flex-wrap items-center justify-between tablet:flex-nowrap">
-          <p className="max-w-[55ch] text-lg tablet:flex-1">
+          <h4 className="max-w-[55ch] text-lg tablet:flex-1">
             Feel free to reach out if you have any questions. I&apos;m always
             available for a quick chat. Unless its 3 A.M. then I&apos;m probably
             working.
-          </p>
+          </h4>
           <span className="mt-4 flex w-full justify-center pr-0 text-7xl tablet:w-auto tablet:pr-14 tablet:text-9xl">
             👨🏽‍💻
           </span>

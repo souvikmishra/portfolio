@@ -45,13 +45,13 @@ export default function ProjectPreview({
             >
               {name}
             </h2>
-            <p
+            <h3
               className={`text-sm  ${
-                isDark ? 'text-zinc-100' : 'text-zinc-500'
+                isDark ? 'text-zinc-100' : 'text-zinc-600'
               }`}
             >
               {description}
-            </p>
+            </h3>
           </div>
           <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-white outline-none group-focus:outline group-focus:outline-white">
             <GoArrowUpRight className="h-6 w-6" />

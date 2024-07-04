@@ -55,7 +55,7 @@ export default function Socials() {
       <Link
         href={LINKS.EMAIL}
         aria-label={LABELS.EMAIL}
-        className="w-full whitespace-nowrap rounded-full bg-black px-12 py-3 text-center font-medium text-white outline-none transition-all duration-300 ease-in-out hover:translate-y-[-0.25rem] hover:bg-transparent hover:text-black hover:outline hover:outline-black focus:translate-y-[-0.25rem] focus:bg-transparent focus:text-black focus:outline focus:outline-black tablet:w-[185px] tablet:min-w-[185px]"
+        className="w-full whitespace-nowrap rounded-full border-2 border-transparent bg-black px-12 py-2.5 text-center font-medium text-white outline-none transition-all duration-300 ease-in-out hover:translate-y-[-0.25rem] hover:border-2 hover:border-black hover:bg-transparent hover:text-black focus:translate-y-[-0.25rem] focus:bg-transparent focus:text-black focus:outline focus:outline-black tablet:w-[185px] tablet:min-w-[185px]"
       >
         Contact Me
       </Link>

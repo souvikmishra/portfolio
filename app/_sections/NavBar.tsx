@@ -28,7 +28,7 @@ export default function NavBar() {
       <div className="md:text-md flex py-2 text-sm text-zinc-500 dark:text-zinc-300">
         <Link
           href={'/'}
-          className={`rounded-md px-2 py-2 outline-none hover:bg-zinc-300 focus:bg-zinc-300 focus:outline-none md:px-4 dark:hover:bg-zinc-900 dark:focus:bg-zinc-900 ${
+          className={`rounded-md px-2 py-2 outline-none hover:bg-zinc-300 focus:bg-zinc-300 focus:outline-none md:px-4 dark:hover:bg-zinc-800 dark:focus:bg-zinc-800 ${
             basePath === '/' ? selectedRouteClass : ''
           }`}
         >
@@ -36,7 +36,7 @@ export default function NavBar() {
         </Link>
         <Link
           href={'/#projects'}
-          className="rounded-md px-2 py-2 outline-none hover:bg-zinc-300 focus:bg-zinc-300 focus:outline-none md:px-4 dark:hover:bg-zinc-900 dark:focus:bg-zinc-900 "
+          className="rounded-md px-2 py-2 outline-none hover:bg-zinc-300 focus:bg-zinc-300 focus:outline-none md:px-4 dark:hover:bg-zinc-800 dark:focus:bg-zinc-800"
         >
           Projects
         </Link>
@@ -44,7 +44,7 @@ export default function NavBar() {
           href={'/myspace'}
           className={`${
             basePath !== '/' ? selectedRouteClass : ''
-          } whitespace-nowrap rounded-md px-2 py-2 outline-none hover:bg-zinc-300 focus:bg-zinc-300 focus:outline-none md:px-4 dark:hover:bg-zinc-900 dark:focus:bg-zinc-900`}
+          } whitespace-nowrap rounded-md px-2 py-2 outline-none hover:bg-zinc-300 focus:bg-zinc-300 focus:outline-none md:px-4 dark:hover:bg-zinc-800 dark:focus:bg-zinc-800`}
         >
           My Space
         </Link>
