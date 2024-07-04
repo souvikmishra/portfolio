@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         github: '#211F1F',
         instagram: '#E4405F',
-        twitter: '#1DA1F2',
+        twitter: '#000',
         linkedin: '#0A66C2',
       },
       screens: {

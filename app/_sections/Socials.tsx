@@ -1,13 +1,12 @@
 import { TfiGithub, TfiLinkedin } from 'react-icons/tfi'
-
+import { RiTwitterXFill } from 'react-icons/ri'
 import { AiFillInstagram } from 'react-icons/ai'
 import Link from 'next/link'
 import React from 'react'
-import { RiTwitterFill } from 'react-icons/ri'
 import SocialButton from '@components/SocialButton'
 
 const LINKS = {
-  TWITTER: 'https://twitter.com/kivous911',
+  TWITTER: 'https://x.com/kivous911',
   GITHUB: 'https://github.com/souvikmishra',
   LINKEDIN: 'https://www.linkedin.com/in/souvikmishra/',
   INSTAGRAM: 'https://www.instagram.com/theavgwebdeveloper/',
@@ -15,7 +14,7 @@ const LINKS = {
 }
 
 const LABELS = {
-  TWITTER: 'Takes you to my Twitter profile',
+  TWITTER: 'Takes you to my X profile',
   GITHUB: 'Takes you to my Github profile',
   LINKEDIN: 'Takes you to my LinkedIn profile',
   INSTAGRAM: 'Takes you to my Instagram profile',
@@ -45,7 +44,7 @@ const SOCIAL_BUTTONS = [
     href: LINKS.TWITTER,
     ariaLabel: LABELS.TWITTER,
     bgColor: 'twitter',
-    icon: <RiTwitterFill className="h-5 w-5" />,
+    icon: <RiTwitterXFill className="h-5 w-5" />,
   },
 ]
 
