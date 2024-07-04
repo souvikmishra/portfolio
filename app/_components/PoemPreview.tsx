@@ -21,7 +21,7 @@ function PoemPreview({
       initial="initial"
       whileInView="animate"
       variants={BentoFadeInAnimation}
-      className="group relative rounded-3xl"
+      className="group relative cursor-pointer rounded-3xl"
     >
       <Link href={`/poems/${slug}`}>
         <div className="absolute left-0 top-0 h-full w-full rounded-3xl border border-dashed border-gray-900 bg-transparent dark:border-gray-200"></div>

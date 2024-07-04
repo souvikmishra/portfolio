@@ -135,16 +135,20 @@ function MySpace() {
         className="not-prose flex flex-col text-gray-900 dark:text-gray-200"
       >
         {MY_SPACE_LINKS.map((link) => (
-          <motion.li variants={listItem} key={link.slug}>
+          <motion.li
+            className={
+              link.active
+                ? 'cursor-pointer'
+                : 'pointer-events-none text-gray-200 dark:text-gray-500'
+            }
+            variants={listItem}
+            key={link.slug}
+          >
             <Link
               href={link.slug}
               target={link.isExternal ? '_blank' : ''}
               tabIndex={link.active ? 0 : -1}
-              className={`group flex items-start rounded-md px-2 py-1 outline-none duration-300 ease-in-out hover:translate-x-2 hover:bg-zinc-300 focus:translate-x-2 focus:bg-zinc-300 focus:outline-none dark:hover:bg-zinc-800 dark:focus:bg-zinc-800 ${
-                link.active
-                  ? ''
-                  : 'pointer-events-none text-gray-200 dark:text-gray-500'
-              }`}
+              className="group flex items-start rounded-md px-2 py-1 outline-none duration-300 ease-in-out hover:translate-x-2 hover:bg-zinc-300 focus:translate-x-2 focus:bg-zinc-300 focus:outline-none dark:hover:bg-zinc-800 dark:focus:bg-zinc-800"
             >
               <span className="text-xl">{link.emoji}</span>
               &nbsp; &nbsp;{' '}
