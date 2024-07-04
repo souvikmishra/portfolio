@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 function MySpace() {
   const MY_SPACE_LINKS = [
     {
-      name: 'Blogs to document my journey as a developer',
+      name: 'Blogs to document my dev journey',
       emoji: '💻',
       slug: '/blogs',
       active: true,
@@ -23,7 +23,7 @@ function MySpace() {
       slug: '/sketches',
     },
     {
-      name: " Wallpapers I've made for me and my friends",
+      name: " Wallpapers I've made",
       emoji: '🖼️',
       slug: '/wallpapers',
     },
@@ -33,7 +33,7 @@ function MySpace() {
       slug: '/philosophy',
     },
     {
-      name: 'Books that I have read and recommend',
+      name: 'Books I have read and recommend',
       emoji: '📚',
       slug: '/books',
     },
