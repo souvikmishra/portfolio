@@ -32,16 +32,16 @@ const AnimatedTextWord = ({
       transition: {
         type: 'spring',
         damping: 20,
-        stiffness: 200,
+        stiffness: 120,
       },
     },
     hidden: {
       opacity: 0,
-      y: 3,
+      y: 4,
       transition: {
         type: 'spring',
         damping: 20,
-        stiffness: 200,
+        stiffness: 120,
       },
     },
   }
@@ -59,7 +59,7 @@ const AnimatedTextWord = ({
       {words.map((word, index) => (
         <motion.span
           variants={child}
-          style={{ marginRight: '5px' }}
+          style={{ marginRight: '8px', letterSpacing: '-1px' }}
           key={index}
         >
           {word}
