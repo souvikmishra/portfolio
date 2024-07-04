@@ -4,7 +4,7 @@ import Projects from '@sections/Projects'
 
 export default function Page() {
   return (
-    <main>
+    <main className="pb-4">
       <Intro />
       <Projects />
       <Contact />

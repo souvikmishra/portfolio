@@ -2,7 +2,7 @@ import Poems from '@sections/Poems'
 
 export default function Index() {
   return (
-    <main>
+    <main className="pb-4">
       <Poems />
     </main>
   )
