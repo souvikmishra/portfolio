@@ -41,7 +41,9 @@ export default function ProjectPreview({
         <div className="flex justify-between">
           <div>
             <h2
-              className={`text-lg font-medium  ${isDark ? 'text-white' : ''}`}
+              className={`text-lg font-medium  ${
+                isDark ? 'text-white' : 'text-black'
+              }`}
             >
               {name}
             </h2>
@@ -53,7 +55,7 @@ export default function ProjectPreview({
               {description}
             </h3>
           </div>
-          <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-white outline-none group-focus:outline group-focus:outline-white">
+          <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-white text-black outline-none group-focus:outline group-focus:outline-white">
             <GoArrowUpRight className="h-6 w-6" />
           </div>
         </div>
