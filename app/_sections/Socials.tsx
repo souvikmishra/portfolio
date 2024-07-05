@@ -4,22 +4,7 @@ import { AiFillInstagram } from 'react-icons/ai'
 import Link from 'next/link'
 import React from 'react'
 import SocialButton from '@components/SocialButton'
-
-const LINKS = {
-  TWITTER: 'https://x.com/kivous911',
-  GITHUB: 'https://github.com/souvikmishra',
-  LINKEDIN: 'https://www.linkedin.com/in/souvikmishra/',
-  INSTAGRAM: 'https://www.instagram.com/theavgwebdeveloper/',
-  EMAIL: 'mailto:mishra.souvik911@gmail.com',
-}
-
-const LABELS = {
-  TWITTER: 'Takes you to my X profile',
-  GITHUB: 'Takes you to my Github profile',
-  LINKEDIN: 'Takes you to my LinkedIn profile',
-  INSTAGRAM: 'Takes you to my Instagram profile',
-  EMAIL: 'Contact me via email',
-}
+import { LINKS, LABELS } from '../_utilities/common'
 
 const SOCIAL_BUTTONS = [
   {
@@ -50,7 +35,7 @@ const SOCIAL_BUTTONS = [
 
 export default function Socials() {
   return (
-    <div className="flex flex-col items-center gap-4 justify-self-end tablet:flex-row">
+    <div className="flex flex-col-reverse items-center gap-4 justify-self-end tablet:flex-row">
       <Link
         href={LINKS.EMAIL}
         aria-label={LABELS.EMAIL}
