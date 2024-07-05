@@ -102,7 +102,7 @@ export function MobileNavLink({
 
 export function MoblileNavFooter() {
   return (
-    <div className="flex w-full cursor-pointer justify-between gap-10 text-xs">
+    <div className="flex w-full cursor-pointer justify-between text-xs">
       <a
         href={LINKS.INSTAGRAM}
         aria-label={LABELS.INSTAGRAM}
@@ -153,9 +153,9 @@ export default function MobileNav({
       initial="initial"
       animate="enter"
       exit="exit"
-      className="fixed right-0 top-0 z-40 block h-screen w-full bg-zinc-300 text-white dark:bg-zinc-800 md:hidden"
+      className="fixed right-0 top-0 z-40 block h-svh w-full bg-zinc-300 text-white dark:bg-zinc-800 md:hidden"
     >
-      <div className="flex h-full flex-col justify-between p-[60px] sm:p-[100px]">
+      <div className="flex h-full flex-col justify-between px-[50px] py-[60px] sm:p-[100px]">
         <div
           onMouseLeave={() => {
             setSelectedIndicator(pathname)
