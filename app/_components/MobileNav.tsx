@@ -91,7 +91,7 @@ export function MobileNavLink({
       ></motion.div>
       <Link
         onClick={() => setIsActive(false)}
-        className=" text-6xl text-black dark:text-white"
+        className="whitespace-nowrap text-6xl text-black dark:text-white "
         href={href}
       >
         {title}
