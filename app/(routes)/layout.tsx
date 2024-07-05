@@ -6,9 +6,7 @@ import type { Metadata } from 'next'
 import NavBar from '@sections/NavBar'
 import dynamic from 'next/dynamic'
 
-const Providers = dynamic(() => import('@utilities/providers'), {
-  ssr: false,
-})
+const Providers = dynamic(() => import('@utilities/providers'))
 
 const inter = Inter({ subsets: ['latin'] })
 
