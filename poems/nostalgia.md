@@ -14,7 +14,7 @@ as my soul were now,
 reminiscing the trips
 I took down the memory lane.
 
-Came accross a lot
-but couldn't fund a bump
+Came across a lot
+but couldn't find a bump
 capable of inducing a halt.
 It was intense indeed.

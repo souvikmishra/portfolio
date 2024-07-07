@@ -18,5 +18,5 @@ it took over me.
 A storm as elegant it was,
 demolished.
 The path chosen led to
-and inevitable ending,
+an inevitable ending,
 inevitably...

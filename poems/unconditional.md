@@ -9,13 +9,13 @@ scream a powerful verse,
 silently.
 
 Holding on to a
-trught I lost my grip.
-Butter yet sweet.
+truth I lost my grip.
+Bitter yet sweet.
 A sensation.
 
 An emotion, indescribable,
 left me speechless.
 Be the words I long for.
 
-My world, and alphabet,
+My world, an alphabet,
 Its intensity?

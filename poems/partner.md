@@ -22,5 +22,5 @@ Murdered by words,
 forgivable by law.
 Yearning for a sign,
 I look at the heavens,
-unconsiously.
+unconsciously.
 Make a wish.

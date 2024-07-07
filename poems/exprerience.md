@@ -7,7 +7,7 @@ I buckled myself
 for the adventure
 that was about to
 unveil itself.
-Myster awaited,
+Mystery awaited,
 masked by expectations.
 
 Silent.

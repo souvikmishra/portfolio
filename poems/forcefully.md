@@ -12,7 +12,7 @@ emptiness.
 
 Once an immovable object,
 melting at your softest touch.
-Whole hearedly,
+Whole heartedly,
 I welcomed devastation.
 
 Love was the answer, indeed.

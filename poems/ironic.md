@@ -12,7 +12,7 @@ Reassuring itself,
 
 Admired by a lot,
 little do people know
-how tought it was
+how tough it was
 when it snapped.
 
 The mosaic fell

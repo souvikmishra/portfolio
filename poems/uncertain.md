@@ -17,7 +17,7 @@ I don't feel alone anymore.
 
 Each movement, each breath I take,
 brings the mist, a tad bit closer.
-It's getting dark, the sun as almost set.
+It's getting dark, the sun has almost set.
 I make haste as if there is
 some place I am to be.
 
