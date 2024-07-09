@@ -32,7 +32,7 @@ const AnimatedTextWord = ({
       transition: {
         type: 'spring',
         damping: 20,
-        stiffness: 120,
+        stiffness: 180,
       },
     },
     hidden: {
@@ -41,7 +41,7 @@ const AnimatedTextWord = ({
       transition: {
         type: 'spring',
         damping: 20,
-        stiffness: 120,
+        stiffness: 180,
       },
     },
   }
