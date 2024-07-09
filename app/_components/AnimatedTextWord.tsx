@@ -5,14 +5,11 @@ import { motion } from 'framer-motion'
 const AnimatedTextWord = ({
   text,
   prefixIcon,
-  delay,
 }: {
   text: string
   prefixIcon?: string
-  delay?: number
 }) => {
   const words = text.split(' ')
-  const calculatedDelay = delay || 0
 
   const container = {
     hidden: { opacity: 0 },
@@ -20,7 +17,7 @@ const AnimatedTextWord = ({
       opacity: 1,
       transition: {
         staggerChildren: 0.15,
-        delayChildren: calculatedDelay + 0.06 * i,
+        delayChildren: 0.06 * i,
       },
     }),
   }
