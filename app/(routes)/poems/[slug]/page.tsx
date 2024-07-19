@@ -1,8 +1,8 @@
 import React from 'react'
 import { notFound } from 'next/navigation'
 import getFormattedDate from '@/app/_utilities/getFormattedDate'
-import Link from 'next/link'
 import { getPoemData, getPoemsData } from '@/app/_utilities/poems'
+import FooterNavButton from '@/app/_components/FooterNavButton'
 
 export function generateStaticParams() {
   const poems = getPoemsData()
@@ -56,23 +56,17 @@ export default async function Poem({ params }: { params: { slug: string } }) {
         </div>
         <article>
           <section dangerouslySetInnerHTML={{ __html: contentHtml }}></section>
-          <p className="mb-20 mt-12 flex items-center justify-between">
+          <p className="mb-20 mt-12 grid grid-cols-2 gap-4 lg:gap-6">
             {prevPostSlug !== null && (
-              <Link
-                href={`/poems/${prevPostSlug}`}
-                className="flex items-center"
-              >
+              <FooterNavButton type="prev" href={`/poems/${prevPostSlug}`}>
                 Previous poem
-              </Link>
+              </FooterNavButton>
             )}
-            <Link href="/poems">Back to poems</Link>
+            {/* <FooterNavButton href="/poems">Back to poems</FooterNavButton> */}
             {nextPoemSlug !== null && (
-              <Link
-                href={`/poems/${nextPoemSlug}`}
-                className="flex items-center"
-              >
+              <FooterNavButton type="next" href={`/poems/${nextPoemSlug}`}>
                 Next poem
-              </Link>
+              </FooterNavButton>
             )}
           </p>
         </article>

@@ -1,9 +1,9 @@
 import React from 'react'
 import { notFound } from 'next/navigation'
 import getFormattedDate from '@/app/_utilities/getFormattedDate'
-import Link from 'next/link'
 import { getBlogData, getBlogsData } from '@/app/_utilities/blogs'
 import { ScrollProgressIndicator } from '@components/ScrollProgressIndicator'
+import FooterNavButton from '@/app/_components/FooterNavButton'
 
 export function generateStaticParams() {
   const posts = getBlogsData()
@@ -59,23 +59,17 @@ export default async function Post({ params }: { params: { slug: string } }) {
         </div>
         <article>
           <section dangerouslySetInnerHTML={{ __html: contentHtml }}></section>
-          <p className="mb-20 mt-12 flex items-center justify-between">
+          <p className="mb-20 mt-12 grid grid-cols-2 gap-4 lg:gap-6">
             {prevPostSlug !== null && (
-              <Link
-                href={`/blogs/${prevPostSlug}`}
-                className="flex items-center"
-              >
+              <FooterNavButton type="prev" href={`/blogs/${prevPostSlug}`}>
                 Previous blog
-              </Link>
+              </FooterNavButton>
             )}
-            <Link href="/blogs">Back to blogs</Link>
+            {/* <FooterNavButton href="/blogs">Back to blogs</FooterNavButton> */}
             {nextPostSlug !== null && (
-              <Link
-                href={`/blogs/${nextPostSlug}`}
-                className="flex items-center"
-              >
+              <FooterNavButton type="next" href={`/blogs/${nextPostSlug}`}>
                 Next blog
-              </Link>
+              </FooterNavButton>
             )}
           </p>
         </article>
