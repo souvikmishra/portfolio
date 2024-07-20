@@ -23,6 +23,7 @@ const ThemeSwitcher = () => {
   return (
     <button
       className="group flex items-center rounded-md p-2 hover:bg-zinc-300 focus:bg-zinc-300 dark:hover:bg-zinc-800 dark:focus:bg-zinc-800"
+      aria-label="toggle theme"
       onClick={() => toggleTheme()}
     >
       {theme === 'dark' ? (
